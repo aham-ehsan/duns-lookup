@@ -11,6 +11,8 @@
 | رقم D-U-N-S | **986473058** |
 | الاسم القانوني عند D&B | **MADAR ALTAMKEEN COMPANY** |
 | رقم حالة الطلب الأول | 34923947 |
+| رقم حالة طلب التحديث | 35015071 |
+| Legal Status عند D&B | **Corporation** ✅ |
 | الرقم الوطني الموحد | 7050078752 |
 | الكيان القانوني | شركة مساهمة مبسطة (Simplified Joint Stock Company)، صفة: شخص واحد |
 | العنوان | 7481 Ayesha Bint Abi Bakr St, Ar Rimal Dist., Additional No. 2515, Buraidah 52363, Al Qassim, Saudi Arabia |
@@ -23,7 +25,7 @@
 |---|---|
 | 1. طلب رقم D-U-N-S جديد | ✅ مكتمل (صدر الرقم 2026-10-20) |
 | 2. تحديث بيانات الاتصال في السجل التجاري | ✅ مكتمل (نسخة السجل رقم 4) |
-| 3. تحديث ملف D-U-N-S بالبيانات الجديدة | ⏳ الآن |
+| 3. تحديث ملف D-U-N-S بالبيانات الجديدة | ⏳ مُرسل 2026-11-15، الحالة 35015071، المتوقع بين 24 نوفمبر و 3 ديسمبر 2026 |
 | 4. فتح حساب Google Play Console | ⏳ بعد التحديث |
 | 5. فتح حساب Apple Developer | ⏳ بعد تشغيل الموقع |
 
@@ -41,6 +43,8 @@
 | 2026-10-20 | صدور رقم D-U-N-S: 986473058 باسم MADAR ALTAMKEEN COMPANY |
 | 2026-10-22 | قرار تحديث النطاق والبريد في السجل التجاري قبل فتح حساب Google |
 | 2026-11-15 | تحديث السجل التجاري (نسخة 4): البريد info@tmkeen.com.sa والموقع tmkeen.com.sa، والجوال بدون تغيير |
+| 2026-11-15 | فتح ملف D&B للرقم 986473058: Legal Status مسجّل Corporation، والمنطقة مسجّلة خطأً Ash Sharqiyah، واسم الرئيس فارغ |
+| 2026-11-15 | إرسال طلب التحديث، ورقم الحالة 35015071 |
 
 ## المرحلة 1: طلب الرقم الجديد
 
@@ -114,21 +118,62 @@ This D-U-N-S request is for Apple Developer Program and Google Play Console orga
 
 إذا ظهر الخطأ عند Apple: رابط **update your D&B profile** في رسالة الخطأ، وطلب تحديث Legal Structure مع إرفاق السجل، ثم إعادة المحاولة بعد يومين عمل. وإن تكرر: https://developer.apple.com/contact/phone/
 
-## المرحلة 3: تحديث ملف D-U-N-S (الآن)
+## المرحلة 3: تحديث ملف D-U-N-S (مُرسل، الحالة 35015071)
 
-غيّر بيانات الاتصال فقط. **لا تغيّر الاسم ولا العنوان**، لأن Apple و Google يطابقانهما مع ملف D&B.
+### المسار في البوابة
+1. https://support.dnb.com/?CUST=APPLEDEV والدخول بالبريد `info@tmkeen.com.sa`
+2. Contact Info: Khalid / Alfouzan / `MADAR ALTAMKEEN COMPANY` / Board Member / +966560509111 / `info@tmkeen.com.sa` / نفس العنوان / Saudi Arabia
+3. User Group: **Developer Program**
+4. سبب الطلب: **Update or Correct DUNS** (وليس Create New DUNS، حتى لا يُنشأ رقم مكرر)
+5. **I know my DUNS Number** ← `986473058` ← Lookup by DUNS
+6. نموذج Update or Correct D-U-N-S: وضع علامة «I want to update this value» على الحقول المطلوبة فقط
+7. المرفقات والملاحظة ← Submit
 
-1. البوابة نفسها: https://support.dnb.com/?CUST=APPLEDEV
-2. بريد الدخول: `info@tmkeen.com.sa`
-3. Contact Info كما في المرحلة 1، مع: Company = `MADAR ALTAMKEEN COMPANY`، و Email = `info@tmkeen.com.sa`
-4. User Group: **Developer Program**
-5. D-U-N-S Search بالاسم والعنوان، ويجب أن تظهر الشركة برقم **986473058**. اخترها واختر **التحديث (Update)**، وليس Create New.
-6. المرفقات: `documents/Madar-alTamkeen-CR-Details-English.pdf` و `documents/Madar-alTamkeen-CR-Details-Arabic.pdf` (نسخة 4) و `documents/Madar-alTamkeen-National-Address-Proof.png`
-7. ملاحظة التحديث:
+### ما وجدناه في ملف D&B قبل التحديث
+
+| الحقل | المسجّل | الملاحظة |
+|---|---|---|
+| Company Name | MADAR ALTAMKEEN COMPANY | صحيح |
+| Local Company Name | شركة مدار التمكين | صحيح |
+| Company Phone | 966 560509111 | صحيح |
+| Business Physical Address | Building Number 7481,Ayesha Bint Abi Bakr Street | صحيح |
+| Business City | Buraidah | صحيح |
+| Region / Territory | Ash Sharqiyah | **خطأ**، بريدة في منطقة القصيم |
+| Business Postal Code | 52363 | صحيح |
+| Legal Status | Corporation | **صحيح، ومشكلة Apple للكيان القانوني لن تتكرر** |
+| CEO / Owner / Principal | فارغ | لم يُسجَّل رغم إرساله في الطلب الأول |
+| SIC | 07210400 - Crop cultivating services | من أول نشاط في السجل، تُرك كما هو |
+| NAICS | 115112 - Soil Preparation, Planting, and Cultivating | تُرك كما هو |
+| الموقع والبريد | لا توجد خانات لهما في نموذج التحديث | طُلبا في الملاحظة |
+
+### ما طُلب تحديثه
+
+| الحقل | القيمة الجديدة |
+|---|---|
+| Region / Territory | Al Qassim |
+| CEO / Owner / Principal Name | Bader Saleh Ali Alabdulmunim |
+| CEO / Owner / Principal Title | Chairman |
+| Website (في الملاحظة) | tmkeen.com.sa |
+| Email (في الملاحظة) | info@tmkeen.com.sa |
+
+حقول العنوان الأخرى ظهرت عليها العلامة مع تعديل المنطقة، وبقيت قيمها كما هي.
+
+المرفقات: الملفات الأربعة في `documents/` (السجل نسخة 4 بالإنجليزي والعربي، وشهادة السجل، وإثبات العنوان الوطني).
+
+### الملاحظة المُرسلة (Additional Details)
 
 ```
-Update request for D-U-N-S 986473058 (MADAR ALTAMKEEN COMPANY). Please update our contact details to match our updated commercial registration (attached): Website: tmkeen.com.sa, Email: info@tmkeen.com.sa, Phone: +966560509111 (unchanged). The legal name and address are unchanged. Please also confirm that the Legal Structure is recorded as Corporation (Simplified Joint Stock Company). This profile is used for Google Play Console and Apple Developer Program enrollment.
+Update request for D-U-N-S 986473058 (MADAR ALTAMKEEN COMPANY).
+1) Region / Territory correction: the company is located in Buraidah, Al Qassim Region, not Ash Sharqiyah (Eastern Province). See the attached commercial registration and National Address proof (Buraidah 52363).
+2) CEO / Principal: Bader Saleh Ali Alabdulmunim, Chairman of the Board of Directors, as listed in the attached commercial registration.
+3) Contact details updated on our commercial registration (copy 4): Website: tmkeen.com.sa, Email: info@tmkeen.com.sa, Phone: +966560509111 (unchanged). Please add the website and email to our D-U-N-S profile.
+The legal name, street address and Legal Status (Corporation) are correct and should remain unchanged. This profile is used for Google Play Console and Apple Developer Program enrollment.
 ```
+
+### المتابعة
+- المدة 7 إلى 14 يوم عمل، أي بين 24 نوفمبر و 3 ديسمبر 2026 تقريباً.
+- الردود تصل إلى `info@tmkeen.com.sa`، والحالة في تبويب Case Status Report.
+- قد تتصل D&B بأحد مسؤولي الشركة المسجلين للتحقق.
 
 ## المرحلة 4 و 5: Google Play و Apple
 
