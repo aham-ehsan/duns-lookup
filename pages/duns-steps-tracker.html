@@ -1,0 +1,343 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>DUNS مدار التمكين</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: one narrow column of numbered steps; each step is a form sheet with copyable values */
+:root{
+  --bg:#F3F5F2; --surface:#FFFFFF; --ink:#18231E; --muted:#5B6A62; --line:#D9E1DB;
+  --accent:#0E6A4E; --accent-soft:#E2F0EA; --done:#2F7D50; --warn:#9A5B00; --warn-soft:#FBF0DE;
+  --font-ar:"IBM Plex Sans Arabic",system-ui,"Segoe UI",Tahoma,sans-serif;
+  --font-mono:"IBM Plex Mono",ui-monospace,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#111815; --surface:#18211D; --ink:#E6EEE9; --muted:#9AA9A1; --line:#2B3832;
+  --accent:#5CC59C; --accent-soft:#1D3229; --done:#6CC48F; --warn:#E3A84A; --warn-soft:#33281A; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#111815; --surface:#18211D; --ink:#E6EEE9; --muted:#9AA9A1; --line:#2B3832;
+  --accent:#5CC59C; --accent-soft:#1D3229; --done:#6CC48F; --warn:#E3A84A; --warn-soft:#33281A; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--font-ar);font-size:15px;line-height:1.7}
+.wrap{max-width:860px;margin:0 auto;padding-inline:16px;padding-block:32px 64px}
+header{display:grid;gap:6px;margin-bottom:24px}
+.eyebrow{font-size:12px;letter-spacing:.04em;color:var(--muted)}
+h1{font-size:28px;line-height:1.3;margin:0;text-wrap:balance}
+.sub{color:var(--muted);margin:0;max-width:62ch}
+.meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+.chip{font-size:12.5px;border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:2px 10px;color:var(--muted)}
+.chip b{color:var(--ink);font-weight:600}
+.progress{display:flex;align-items:center;gap:12px;margin:16px 0 28px}
+.bar{flex:1;height:6px;background:var(--line);border-radius:3px;overflow:hidden}
+.bar i{display:block;height:100%;background:var(--accent);width:0;transition:width .3s}
+.progress span{font-size:13px;color:var(--muted);font-variant-numeric:tabular-nums}
+ol.steps{list-style:none;margin:0;padding:0;display:grid;gap:14px}
+.step{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:18px 20px;display:grid;gap:12px}
+.step.current{border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-soft)}
+.step-head{display:flex;align-items:flex-start;gap:12px}
+.num{flex:none;width:30px;height:30px;border-radius:50%;display:grid;place-items:center;font-weight:600;font-size:14px;border:1.5px solid var(--line);color:var(--muted);font-variant-numeric:tabular-nums}
+.step.current .num{border-color:var(--accent);color:var(--accent)}
+.step.is-done .num{background:var(--done);border-color:var(--done);color:var(--surface)}
+.step-title{flex:1;min-width:0}
+.step-title h2{font-size:17px;margin:0;line-height:1.5}
+.step-title p{margin:2px 0 0;color:var(--muted);font-size:14px}
+.status{flex:none;display:flex;align-items:center;gap:6px;font-size:13px;color:var(--muted);cursor:pointer;user-select:none;padding:4px 8px;border-radius:6px}
+.status:hover{background:var(--accent-soft)}
+.status input{accent-color:var(--done);width:16px;height:16px}
+.tag-now{font-size:11.5px;background:var(--accent);color:var(--surface);border-radius:4px;padding:0 6px;margin-inline-start:6px;vertical-align:2px}
+.step.is-done .tag-now{display:none}
+.fields{display:grid;gap:0;border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.row{display:grid;grid-template-columns:minmax(120px,190px) 1fr auto;align-items:center;gap:12px;padding:8px 12px;border-top:1px solid var(--line)}
+.row:first-child{border-top:0}
+.row .k{font-size:13px;color:var(--muted);line-height:1.4}
+.row .k small{display:block;font-family:var(--font-mono);font-size:12px;color:var(--ink);opacity:.8}
+.row .v{font-family:var(--font-mono);font-size:14px;direction:ltr;text-align:left;min-width:0;overflow-wrap:anywhere}
+.row .v.ar{font-family:var(--font-ar);direction:rtl;text-align:right}
+.copy{font:inherit;font-size:12.5px;border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:6px;padding:3px 10px;cursor:pointer;white-space:nowrap}
+.copy:hover{border-color:var(--accent);color:var(--accent)}
+.copy:focus-visible,.status:focus-within{outline:2px solid var(--accent);outline-offset:2px}
+.copy.ok{background:var(--done);border-color:var(--done);color:var(--surface)}
+.note{font-size:13.5px;padding:10px 12px;border-radius:8px;background:var(--warn-soft);color:var(--ink);border-inline-start:3px solid var(--warn)}
+.note b{color:var(--warn)}
+.tip{font-size:13.5px;color:var(--muted);margin:0}
+ul.files{margin:0;padding:0;list-style:none;display:grid;gap:8px}
+ul.files li{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:8px 12px;border:1px dashed var(--line);border-radius:8px}
+ul.files code{font-family:var(--font-mono);font-size:13px;direction:ltr}
+ul.files span{color:var(--muted);font-size:13px}
+a{color:var(--accent)}
+.log{margin-top:28px;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:16px 20px}
+.log h2{font-size:16px;margin:0 0 8px}
+.log table{width:100%;border-collapse:collapse;font-size:13.5px}
+.log td{padding:6px 4px;border-top:1px solid var(--line);vertical-align:top}
+.log td:first-child{white-space:nowrap;color:var(--muted);font-family:var(--font-mono);font-size:12.5px;width:1%;padding-inline-end:14px}
+@media (max-width:560px){
+  .row{grid-template-columns:1fr auto;gap:4px 10px}
+  .row .k{grid-column:1 / -1}
+  h1{font-size:23px}
+}
+@media (prefers-reduced-motion:reduce){.bar i{transition:none}}
+</style>
+
+<div class="wrap" dir="rtl">
+  <header>
+    <div class="eyebrow">طلب رقم D-U-N-S لحسابي Apple Developer و Google Play Console</div>
+    <h1>شركة مدار التمكين · Madar alTamkeen Company</h1>
+    <p class="sub">كل خطوات الطلب على بوابة دعم D&amp;B الخاصة بـ Apple، مع البيانات الجاهزة للنسخ من السجل التجاري والعنوان الوطني. علّم كل خطوة بعد إنهائها.</p>
+    <div class="meta">
+      <span class="chip">الرقم الوطني الموحد <b dir="ltr">7050078752</b></span>
+      <span class="chip">D-U-N-S <b dir="ltr">986473058</b></span>
+      <span class="chip">رقم الحالة <b dir="ltr">34923947</b></span>
+      <span class="chip">العنوان المختصر <b dir="ltr">QBPD7481</b></span>
+      <span class="chip">البوابة <a href="https://support.dnb.com/?CUST=APPLEDEV" target="_blank" rel="noopener" dir="ltr">support.dnb.com/?CUST=APPLEDEV</a></span>
+    </div>
+  </header>
+
+  <div class="progress"><div class="bar"><i id="barFill"></i></div><span id="progText">0 / 9</span></div>
+
+  <ol class="steps" id="steps">
+
+    <li class="step" data-step="1" data-default="done">
+      <div class="step-head">
+        <div class="num">1</div>
+        <div class="step-title"><h2>افتح صفحة الدعم وأدخل البريد الإلكتروني</h2><p>صفحة «Please provide your email address» ثم Next.</p></div>
+        <label class="status"><input type="checkbox" id="s1"> تمت</label>
+      </div>
+      <div class="fields">
+        <div class="row"><div class="k">Email</div><div class="v">khaled@ehsan.org.sa</div><button class="copy" type="button">نسخ</button></div>
+      </div>
+    </li>
+
+    <li class="step" data-step="2" data-default="done">
+      <div class="step-head">
+        <div class="num">2</div>
+        <div class="step-title"><h2>بيانات التواصل (Contact Info)</h2><p>بيانات الشخص المسؤول عن الطلب وعنوان الشركة. تأكد من العنوان بدقة.</p></div>
+        <label class="status"><input type="checkbox" id="s2"> تمت</label>
+      </div>
+      <div class="fields">
+        <div class="row"><div class="k">الاسم الأول<small>First Name</small></div><div class="v">Khalid</div><button class="copy" type="button">نسخ</button></div>
+        <div class="row"><div class="k">اسم العائلة<small>Last Name</small></div><div class="v">Alfouzan</div><button class="copy" type="button">نسخ</button></div>
+        <div class="row"><div class="k">الشركة<small>Company</small></div><div class="v">Madar alTamkeen Company</div><button class="copy" type="button">نسخ</button></div>
+        <div class="row"><div class="k">المسمى الوظيفي<small>Job Title</small></div><div class="v">Board Member</div><button class="copy" type="button">نسخ</button></div>
+        <div class="row"><div class="k">الجوال<small>Phone</small></div><div class="v">+966560509111</div><button class="copy" type="button">نسخ</button></div>
+        <div class="row"><div class="k">تأكيد البريد<small>Confirm Email</small></div><div class="v">khaled@ehsan.org.sa</div><button class="copy" type="button">نسخ</button></div>
+        <div class="row"><div class="k">الشارع<small>Street</small></div><div class="v">7481 Ayesha Bint Abi Bakr St, Ar Rimal Dist., Additional No. 2515</div><button class="copy" type="button">نسخ</button></div>
+        <div class="row"><div class="k">المدينة<small>City</small></div><div class="v">Buraidah</div><button class="copy" type="button">نسخ</button></div>
+        <div class="row"><div class="k">المنطقة<small>State / Province</small></div><div class="v">Al Qassim</div><button class="copy" type="button">نسخ</button></div>
+        <div class="row"><div class="k">الرمز البريدي<small>Zip / Postal Code</small></div><div class="v">52363</div><button class="copy" type="button">نسخ</button></div>
+        <div class="row"><div class="k">الدولة<small>Country</small></div><div class="v">Saudi Arabia</div><button class="copy" type="button">نسخ</button></div>
+      </div>
+      <div class="note"><b>انتبه:</b> قائمة الدولة تبدأ على United Kingdom، غيّرها إلى Saudi Arabia. الجوال يجب أن يكون متاحاً للرد، فقد تتصل D&amp;B للتحقق من مفتاح السعودية أو الهند أو أيرلندا.</div>
+    </li>
+
+    <li class="step" data-step="3" data-default="done">
+      <div class="step-head">
+        <div class="num">3</div>
+        <div class="step-title"><h2>اختر فئة المستخدم</h2><p>صفحة «Apple Developer Program - D-U-N-S Number»: اضغط زر <b>Developer Program</b>، وليس Apple Business Manager.</p></div>
+        <label class="status"><input type="checkbox" id="s3"> تمت</label>
+      </div>
+      <div class="fields">
+        <div class="row"><div class="k">User Group</div><div class="v">Developer Program</div><button class="copy" type="button">نسخ</button></div>
+      </div>
+    </li>
+
+    <li class="step" data-step="4" data-default="done">
+      <div class="step-head">
+        <div class="num">4</div>
+        <div class="step-title"><h2>البحث عن الشركة (D-U-N-S Search)</h2><p>اكتب الاسم كما في السجل التجاري المترجم حرفياً، ثم اضغط Lookup by Name / Address. إذا لم تظهر الشركة في النتائج اختر إنشاء رقم جديد.</p></div>
+        <label class="status"><input type="checkbox" id="s4"> تمت</label>
+      </div>
+      <div class="fields">
+        <div class="row"><div class="k">الدولة<small>Country</small></div><div class="v">Saudi Arabia</div><span></span></div>
+        <div class="row"><div class="k">الاسم القانوني الكامل<small>Full Legal Business Name</small></div><div class="v">Madar alTamkeen Company</div><button class="copy" type="button">نسخ</button></div>
+        <div class="row"><div class="k">العنوان<small>Address</small></div><div class="v">7481 Ayesha Bint Abi Bakr St, Ar Rimal Dist.</div><button class="copy" type="button">نسخ</button></div>
+        <div class="row"><div class="k">المدينة<small>City</small></div><div class="v">Buraidah</div><button class="copy" type="button">نسخ</button></div>
+        <div class="row"><div class="k">المنطقة<small>State / Region / Territory</small></div><div class="v">Al Qassim</div><button class="copy" type="button">نسخ</button></div>
+        <div class="row"><div class="k">الرمز البريدي<small>Postal Code</small></div><div class="v">52363</div><button class="copy" type="button">نسخ</button></div>
+        <div class="row"><div class="k">إذا لم تظهر الشركة</div><div class="v">Create New DUNS</div><button class="copy" type="button">نسخ</button></div>
+      </div>
+      <div class="note"><b>النتيجة:</b> No Match found for the given input criteria. الشركة ليس لها رقم سابق، والمطلوب الضغط على رابط «click here to submit a request to create a new D-U-N-S».</div>
+    </li>
+
+    <li class="step" data-step="5" data-default="done">
+      <div class="step-head">
+        <div class="num">5</div>
+        <div class="step-title"><h2>نموذج Create D-U-N-S Number</h2><p>بيانات الشركة كما في السجل التجاري المترجم. الحقول المعلّمة بالأحمر في النموذج إلزامية.</p></div>
+        <label class="status"><input type="checkbox" id="s5"> تمت</label>
+      </div>
+      <div class="fields">
+        <div class="row"><div class="k">الاسم القانوني<small>Full Legal Business Name</small></div><div class="v">Madar alTamkeen Company</div><button class="copy" type="button">نسخ</button></div>
+        <div class="row"><div class="k">الاسم التجاري<small>DBA / Tradestyle</small></div><div class="v ar">اتركه فارغاً</div><span></span></div>
+        <div class="row"><div class="k">هاتف الشركة<small>Company Phone</small></div><div class="v">+966560509111</div><button class="copy" type="button">نسخ</button></div>
+        <div class="row"><div class="k">العنوان<small>Business Street Address</small></div><div class="v">7481 Ayesha Bint Abi Bakr St, Ar Rimal Dist.</div><button class="copy" type="button">نسخ</button></div>
+        <div class="row"><div class="k">سطر العنوان 2<small>Address Line 2</small></div><div class="v">Additional No. 2515</div><button class="copy" type="button">نسخ</button></div>
+        <div class="row"><div class="k">المدينة<small>Business City</small></div><div class="v">Buraidah</div><button class="copy" type="button">نسخ</button></div>
+        <div class="row"><div class="k">المنطقة<small>Business State / Province</small></div><div class="v">Al Qassim</div><button class="copy" type="button">نسخ</button></div>
+        <div class="row"><div class="k">الرمز البريدي<small>Business Postal Code</small></div><div class="v">52363</div><button class="copy" type="button">نسخ</button></div>
+        <div class="row"><div class="k">الدولة<small>Business Country</small></div><div class="v">Saudi Arabia</div><span></span></div>
+        <div class="row"><div class="k">الكيان القانوني<small>Business Structure / Legal Structure</small></div><div class="v">Simplified Joint Stock Company (Corporation)</div><button class="copy" type="button">نسخ</button></div>
+        <div class="row"><div class="k">اسم الرئيس<small>CEO Name</small></div><div class="v">Bader Saleh Ali Alabdulmunim</div><button class="copy" type="button">نسخ</button></div>
+        <div class="row"><div class="k">المنصب<small>CEO Title</small></div><div class="v">Chairman (أو President / CEO — وليس Owner)</div><span></span></div>
+        <div class="row"><div class="k">الموقع<small>Company Website</small></div><div class="v ar">اتركه فارغاً إن لم يكن للشركة موقع</div><span></span></div>
+        <div class="row"><div class="k">نشاط منزلي؟<small>Home-Based Business?</small></div><div class="v">No</div><span></span></div>
+        <div class="row"><div class="k">عدد الموظفين<small>Number of Employees</small></div><div class="v">7</div><button class="copy" type="button">نسخ</button></div>
+        <div class="row"><div class="k">تاريخ بدء النشاط<small>Date Business Started</small></div><div class="v">05/15/2025</div><button class="copy" type="button">نسخ</button></div>
+        <div class="row"><div class="k">SIC / NAICS</div><div class="v ar">اتركهما فارغين (اختياري)</div><span></span></div>
+      </div>
+    </li>
+
+    <li class="step" data-step="6" data-default="done">
+      <div class="step-head">
+        <div class="num">6</div>
+        <div class="step-title"><h2>تجنّب رفض Apple للكيان القانوني</h2><p>درس من طلب «Nezam Health Establishment» السابق.</p></div>
+        <label class="status"><input type="checkbox" id="s6"> تمت</label>
+      </div>
+      <div class="note"><b>ما حدث سابقاً:</b> رفضت Apple رقم D-U-N-S للمؤسسة برسالة «This organization could not be verified as a legal entity» لأن ملف D&amp;B لم يحدد نوع الكيان، والمؤسسة الفردية لا تُقبل كمنظمة عند Apple. شركة مدار التمكين شركة مساهمة مبسطة لها شخصية اعتبارية ومجلس إدارة، لكن صفة «شخص واحد» في السجل قد تُفهم خطأً كمؤسسة فردية.</div>
+      <div class="fields">
+        <div class="row"><div class="k">الكيان القانوني</div><div class="v ar">اكتب Simplified Joint Stock Company (Corporation)، ولا تكتب One Person أو Sole Proprietorship أو Establishment</div><span></span></div>
+        <div class="row"><div class="k">المنصب</div><div class="v ar">Chairman أو CEO، وليس Owner</div><span></span></div>
+        <div class="row"><div class="k">عدد الموظفين</div><div class="v ar">لا تكتب 1</div><span></span></div>
+        <div class="row"><div class="k">ملاحظة للطلب<small>Additional Details</small></div><div class="v">This D-U-N-S request is for Apple Developer Program and Google Play Console organization enrollment. Madar alTamkeen Company is a Simplified Joint Stock Company (a corporation with limited liability and its own legal personality), registered with the Saudi Ministry of Commerce under Unified National Number 7050078752 on 15 May 2025. It is managed by a Board of Directors of 5 members (Chairman: Bader Saleh Ali Alabdulmunim) and has 7 employees. Please record the legal structure as Corporation / Joint Stock Company, NOT as a Sole Proprietorship. The "One Person" note on the commercial registration means the company has a single shareholder; it is not an individual business. Attached: commercial registration (English and Arabic) and National Address proof. Contact: Khalid Alfouzan, khaled@ehsan.org.sa, +966560509111.</div><button class="copy" type="button">نسخ</button></div>
+      </div>
+      <p class="tip">الصق الملاحظة في أي حقل وصف أو تعليق يظهر قبل الإرسال. بعد استلام الرقم افحصه في <a href="https://developer.apple.com/enroll/duns-lookup/" target="_blank" rel="noopener">أداة Apple</a> قبل التسجيل. إن ظهر نقص في نوع الكيان، اطلب من D&amp;B تحديث Legal Structure من تبويب Submit Case وأرفق السجل التجاري.</p>
+    </li>
+
+    <li class="step" data-step="7" data-default="done">
+      <div class="step-head">
+        <div class="num">7</div>
+        <div class="step-title"><h2>إرفاق المستندات والملاحظة ثم Submit</h2><p>الشاشة الأخيرة: Attachments (حتى 5 ملفات، 10MB لكل ملف) و Additional Details. ارفع الملفات الأربعة والصق ملاحظة الخطوة 6 في Additional Details. الملفات في مجلد <code dir="ltr">C:\duns-lookup</code>.</p></div>
+        <label class="status"><input type="checkbox" id="s7"> تمت</label>
+      </div>
+      <ul class="files">
+        <li><code>Madar-alTamkeen-CR-Details-English.pdf</code><span>بيانات السجل بالإنجليزي (المركز السعودي للأعمال)، وفيه Simplified joint stock company</span></li>
+        <li><code>Madar-alTamkeen-CR-Certificate-Arabic.pdf</code><span>شهادة السجل التجاري الأصلية (عربي، وزارة التجارة)</span></li>
+        <li><code>Madar-alTamkeen-CR-Details-Arabic.pdf</code><span>بيانات السجل بالعربي (المركز السعودي للأعمال)</span></li>
+        <li><code>Madar-alTamkeen-National-Address-Proof.png</code><span>إثبات العنوان الوطني، صالح حتى 26/3/2027</span></li>
+      </ul>
+    </li>
+
+    <li class="step" data-step="8" data-default="done">
+      <div class="step-head">
+        <div class="num">8</div>
+        <div class="step-title"><h2>الإرسال وحفظ رقم الطلب</h2><p>بعد Submit تظهر صفحة تأكيد فيها رقم الطلب، ويصل بريد برقم الحالة (Case Number).</p></div>
+        <label class="status"><input type="checkbox" id="s8"> تمت</label>
+      </div>
+      <div class="fields">
+        <div class="row"><div class="k">رقم الطلب<small>Request / Case No.</small></div><div class="v" id="caseNo">34923947</div><button class="copy" type="button">نسخ</button></div>
+        <div class="row"><div class="k">تاريخ الإرسال</div><div class="v" id="sentDate">2026-10-13</div><span></span></div>
+      </div>
+    </li>
+
+    <li class="step" data-step="9" data-default="done">
+      <div class="step-head">
+        <div class="num">9</div>
+        <div class="step-title"><h2>المتابعة حتى استلام الرقم</h2><p>المعالجة من 7 إلى 14 يوم عمل، أي المتوقع بين 22 أكتوبر و 2 نوفمبر 2026. الردود تصل إلى khaled@ehsan.org.sa، والحالة تظهر في تبويب Case Status Report في بوابة D&amp;B.</p></div>
+        <label class="status"><input type="checkbox" id="s9"> تمت</label>
+      </div>
+      <div class="note"><b>أسباب الرفض الشائعة:</b> بيانات غير مطابقة للسجل، أو عدم الرد على الجوال، أو تجاهل رسائل D&amp;B. راقب البريد (ومجلد الرسائل غير المرغوبة) من نطاق <span dir="ltr">dnb.com</span> ورُد عليها بسرعة.</div>
+      <div class="fields">
+        <div class="row"><div class="k">رقم D-U-N-S</div><div class="v">986473058</div><button class="copy" type="button">نسخ</button></div>
+        <div class="row"><div class="k">الاسم القانوني عند D&amp;B<small>Legal Business Name</small></div><div class="v">MADAR ALTAMKEEN COMPANY</div><button class="copy" type="button">نسخ</button></div>
+        <div class="row"><div class="k">تاريخ الاستلام</div><div class="v">2026-10-20</div><span></span></div>
+      </div>
+      <p class="tip">بعد استلام الرقم انتظر يومين تقريباً حتى يظهر عند Apple، ثم أكمل التسجيل في Apple Developer Program كمنظمة.</p>
+    </li>
+  </ol>
+
+  <section class="log">
+    <h2>بعد استلام الرقم: فتح حسابي Apple و Google</h2>
+    <p class="tip">رقم D-U-N-S واحد يكفي للحسابين. كلاهما يطابق ما تُدخله مع ملف D&amp;B، فاستخدم نفس الاسم والعنوان حرفياً.</p>
+    <div class="fields" style="margin-top:10px">
+      <div class="row"><div class="k">رقم D-U-N-S</div><div class="v">986473058</div><button class="copy" type="button">نسخ</button></div>
+      <div class="row"><div class="k">الاسم في الحسابين</div><div class="v">MADAR ALTAMKEEN COMPANY</div><button class="copy" type="button">نسخ</button></div>
+      <div class="row"><div class="k">العنوان في الحسابين</div><div class="v">7481 Ayesha Bint Abi Bakr St, Ar Rimal Dist., Buraidah, Al Qassim 52363, Saudi Arabia</div><button class="copy" type="button">نسخ</button></div>
+      <div class="row"><div class="k">Apple Developer</div><div class="v ar">نوع التسجيل Organization. يلزم موقع إلكتروني عام مرتبط بالشركة، وApple ID بتحقق ثنائي، وصلاحية توقيع للشخص المسجِّل. الرسوم 99$ سنوياً. انتظر يومين عمل بعد وصول الرقم.</div><span></span></div>
+      <div class="row"><div class="k">Google Play Console</div><div class="v ar">نوع الحساب Organization. يطلب رقم D-U-N-S وموقع الشركة وهاتف وبريد للتحقق. الرسوم 25$ مرة واحدة.</div><span></span></div>
+      <div class="row"><div class="k">عند وصول بريد D&amp;B</div><div class="v ar">ردّ عليه واطلب تأكيد أن Legal Structure مسجّل Corporation / Joint Stock Company قبل إغلاق الطلب.</div><span></span></div>
+      <div class="row"><div class="k">نص الرد على D&amp;B</div><div class="v">Thank you. Before closing this case, please confirm that the Legal Structure / Entity Type on our D-U-N-S profile is recorded as Corporation (Simplified Joint Stock Company), not Sole Proprietorship. This is required for Apple Developer Program and Google Play Console enrollment, which reject profiles without a legal entity type. Our commercial registration is attached to the case.</div><button class="copy" type="button">نسخ</button></div>
+      <div class="row"><div class="k">إذا ظهر خطأ Apple</div><div class="v ar">«could not be verified as a legal entity»: اضغط رابط update your D&amp;B profile، واطلب تحديث Legal Structure مع إرفاق السجل بالإنجليزي، ثم أعد المحاولة بعد يومين عمل. وإن تكرر الخطأ فراسل Apple Developer Support وأرفق السجل.</div><span></span></div>
+      <div class="row"><div class="k">قبل التقديم</div><div class="v ar">افحص الرقم في أداة Apple للبحث عن D-U-N-S وتأكد أن نوع الكيان Corporation وليس فارغاً.</div><span></span></div>
+    </div>
+  </section>
+
+  <section class="log">
+    <h2>المرحلة 2: تحديث بيانات التواصل ثم Google Play<span class="tag-now">الآن</span></h2>
+    <p class="tip">غيّر بيانات التواصل فقط (الموقع، البريد، الجوال). لا تغيّر الاسم أو العنوان، لأن Apple و Google يطابقانهما مع ملف D&amp;B.</p>
+    <div class="fields" style="margin-top:10px">
+      <div class="row"><div class="k">1 · السجل التجاري ✓</div><div class="v ar">تم التحديث: الموقع tmkeen.com.sa، البريد info@tmkeen.com.sa، الجوال 00966560509111 (بدون تغيير).</div><span></span></div>
+      <div class="row"><div class="k">تنبيه الموقع</div><div class="v ar">في 15 نوفمبر 2026 النطاق tmkeen.com.sa لا يفتح (لا يوجد سجل A في DNS)، والبريد يعمل (MX على Google). Apple تشترط موقعاً عاماً يفتح، فشغّل الموقع قبل التسجيل.</div><span></span></div>
+      <div class="row"><div class="k">بريد الدخول للتحديث</div><div class="v">info@tmkeen.com.sa</div><button class="copy" type="button">نسخ</button></div>
+      <div class="row"><div class="k">2 · تحديث D-U-N-S ← الآن</div><div class="v ar">من نفس البوابة support.dnb.com/?CUST=APPLEDEV ← Submit Case ← Developer Program ← ابحث عن الشركة واختر السجل الموجود 986473058 ← طلب تحديث. أرفق السجل الجديد والصق ملاحظة التحديث.</div><span></span></div>
+      <div class="row"><div class="k">ملاحظة التحديث</div><div class="v">Update request for D-U-N-S 986473058 (MADAR ALTAMKEEN COMPANY). Please update our contact details to match our updated commercial registration (attached): Website: tmkeen.com.sa, Email: info@tmkeen.com.sa, Phone: +966560509111 (unchanged). The legal name and address are unchanged. Please also confirm that the Legal Structure is recorded as Corporation (Simplified Joint Stock Company). This profile is used for Google Play Console and Apple Developer Program enrollment.</div><button class="copy" type="button">نسخ</button></div>
+      <div class="row"><div class="k">3 · انتظار التحديث</div><div class="v ar">انتظر بريد D&amp;B بإتمام التحديث، ثم يومين عمل حتى تصل البيانات الجديدة إلى Apple و Google.</div><span></span></div>
+      <div class="row"><div class="k">4 · Google Play Console</div><div class="v ar">حساب Organization بالرقم 986473058 والاسم MADAR ALTAMKEEN COMPANY والعنوان كما هو، والبريد والجوال والموقع الجديدة.</div><span></span></div>
+    </div>
+  </section>
+
+  <section class="log">
+    <h2>سجل الطلب</h2>
+    <table>
+      <tr><td>2026-10-11</td><td>تجهيز المستندات: السجل التجاري (عربي وإنجليزي) وإثبات العنوان الوطني.</td></tr>
+      <tr><td>2026-10-11</td><td>الخطوة 1: إدخال البريد <span dir="ltr">khaled@ehsan.org.sa</span> في صفحة الدعم.</td></tr>
+      <tr><td>2026-10-11</td><td>الخطوة 2: تعبئة بيانات التواصل (Contact Info) والدخول بحساب <span dir="ltr">khaled@ehsan.org.sa</span>.</td></tr>
+      <tr><td>2026-10-11</td><td>الخطوة 3: اختيار فئة المستخدم Developer Program.</td></tr>
+      <tr><td>2026-10-11</td><td>الخطوة 4: البحث عن الشركة باسمها وعنوانها في D-U-N-S Search. النتيجة: No Match، أي لا يوجد رقم سابق.</td></tr>
+      <tr><td>2026-10-11</td><td>الضغط على رابط طلب إنشاء رقم D-U-N-S جديد.</td></tr>
+      <tr><td>2026-10-12</td><td>الخطوة 5: نموذج Create D-U-N-S Number. الكيان القانوني Simplified Joint Stock Company (Corporation) لتجنب رفض Apple كما حدث مع Nezam Health Establishment.</td></tr>
+      <tr><td>2026-10-12</td><td>إعادة تسمية المستندات بالإنجليزي استعداداً للرفع.</td></tr>
+      <tr><td>2026-10-12</td><td>عدد الموظفين: 56.</td></tr>
+      <tr><td>2026-10-12</td><td>CEO Title: Chairman (مطابق للسجل). Date Business Started: 05/15/2025 (تاريخ قيد السجل). SIC و NAICS فارغان لأن أنشطة السجل كثيرة (2591 نشاطاً) والكود الخاطئ يصنّف الشركة خطأً.</td></tr>
+      <tr><td>2026-10-12</td><td>مراجعة نموذج Create D-U-N-S Number كاملاً: كل الحقول مطابقة للسجل التجاري والعنوان الوطني. الضغط على Next.</td></tr>
+      <tr><td>2026-10-12</td><td>الشاشة الأخيرة: إرفاق 4 مستندات (السجل بالإنجليزي والعربي وإثبات العنوان)، ولصق ملاحظة الكيان القانوني في Additional Details، ثم Submit.</td></tr>
+      <tr><td>2026-10-12</td><td>الهدف: الرقم نفسه لفتح حسابي Apple Developer و Google Play Console. تعديل الملاحظة لتذكر الحسابين.</td></tr>
+      <tr><td>2026-10-13</td><td>تعديل عدد الموظفين من 56 إلى 7 في النموذج وفي ملاحظة Additional Details.</td></tr>
+      <tr><td>2026-10-13</td><td>خطة منع خطأ Apple «could not be verified as a legal entity»: تأكيد Legal Structure مع D&amp;B عند وصول بريد الحالة، وفحص الرقم في أداة Apple قبل التسجيل.</td></tr>
+      <tr><td>2026-10-13</td><td>الخطوة 8: إرسال الطلب. رقم الحالة <b dir="ltr">34923947</b>. المدة المتوقعة 7–14 يوم عمل (22 أكتوبر – 2 نوفمبر 2026).</td></tr>
+      <tr><td>2026-10-14</td><td>وصل بريد D&amp;B بملخص الحالة 34923947، والوصف (Additional Details) مسجّل كاملاً. الخطوة التالية: الرد بطلب تأكيد Legal Structure = Corporation.</td></tr>
+      <tr><td>2026-10-20</td><td>وصل رقم D-U-N-S: <b dir="ltr">986473058</b>، والاسم القانوني <span dir="ltr">MADAR ALTAMKEEN COMPANY</span>. يصبح صالحاً للتسجيل في Apple بعد 24–48 ساعة.</td></tr>
+      <tr><td>2026-10-22</td><td>خطة المرحلة 2: تحديث الدومين والبريد والجوال في السجل التجاري، ثم تحديث ملف D-U-N-S، ثم فتح حساب Google Play.</td></tr>
+      <tr><td>2026-11-15</td><td>تحديث بيانات الاتصال في السجل التجاري: الموقع tmkeen.com.sa، البريد info@tmkeen.com.sa، الجوال بدون تغيير. البدء في طلب تحديث ملف D-U-N-S 986473058.</td></tr>
+    </table>
+  </section>
+</div>
+
+<script>
+(function(){
+  var KEY='madar-duns-steps';
+  var saved={};
+  try{saved=JSON.parse(localStorage.getItem(KEY)||'{}')||{}}catch(e){}
+  var steps=[].slice.call(document.querySelectorAll('.step'));
+  steps.forEach(function(s){
+    var cb=s.querySelector('input[type=checkbox]');
+    var n=s.dataset.step;
+    cb.checked = (n in saved) ? !!saved[n] : s.dataset.default==='done';
+    cb.addEventListener('change',function(){
+      saved[n]=cb.checked;
+      try{localStorage.setItem(KEY,JSON.stringify(saved))}catch(e){}
+      render();
+    });
+  });
+  function render(){
+    var done=0, current=null;
+    steps.forEach(function(s){
+      var c=s.querySelector('input').checked;
+      s.classList.toggle('is-done',c);
+      s.classList.remove('current');
+      if(c)done++; else if(!current)current=s;
+    });
+    if(current)current.classList.add('current');
+    document.getElementById('barFill').style.width=(done/steps.length*100)+'%';
+    document.getElementById('progText').textContent=done+' / '+steps.length;
+  }
+  render();
+  document.querySelectorAll('.copy').forEach(function(b){
+    b.addEventListener('click',function(){
+      var v=b.parentNode.querySelector('.v');
+      var text=v.textContent.trim();
+      function ok(){b.textContent='تم النسخ';b.classList.add('ok');setTimeout(function(){b.textContent='نسخ';b.classList.remove('ok')},1400)}
+      function fallback(){var r=document.createRange();r.selectNodeContents(v);var sel=getSelection();sel.removeAllRanges();sel.addRange(r);b.textContent='حدد ثم Ctrl+C'}
+      if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(text).then(ok,fallback)}else fallback();
+    });
+  });
+})();
+</script>
+
+</body></html>

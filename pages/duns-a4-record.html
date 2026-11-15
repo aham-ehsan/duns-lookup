@@ -1,0 +1,244 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>DUNS مدار التمكين · A4</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+/* Layout: two fixed A4 sheets (794×1123 px) on a grey desk; black-on-white form record with inverted section bars. Deliberately single (paper) theme. */
+:root{
+  --paper:#FFFFFF; --ink:#000000; --soft:#4A4A4A; --rule:#000000; --hair:#BDBDBD; --desk:#E6E6E6;
+  --font:"IBM Plex Sans Arabic",Tahoma,"Segoe UI",Arial,sans-serif;
+  --mono:"IBM Plex Mono",Consolas,"Courier New",monospace;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html,body{background:var(--desk);color:var(--ink)}
+body{font-family:var(--font)}
+.toolbar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--ink);color:var(--paper);display:flex;flex-wrap:wrap;align-items:center;gap:10px 16px;padding:10px 16px}
+.toolbar h1{font-size:15px;font-weight:600;margin:0;flex:1;min-width:0}
+.toolbar .msg{font-size:12.5px;opacity:.85;min-width:0}
+.btn{font:inherit;font-size:14px;font-weight:600;background:var(--paper);color:var(--ink);border:2px solid var(--paper);border-radius:4px;padding:6px 16px;cursor:pointer}
+.btn:hover{background:var(--ink);color:var(--paper)}
+.btn:focus-visible{outline:2px solid var(--paper);outline-offset:3px}
+.btn[disabled]{opacity:.5;cursor:progress}
+.btn.ghost{background:transparent;color:var(--paper);font-weight:500}
+.hint{max-width:794px;margin:12px auto 0;padding-inline:16px;font-size:12.5px;color:var(--soft);direction:rtl;text-align:right}
+.desk{overflow-x:auto;padding-block:16px 40px;padding-inline:16px}
+.pages{display:grid;gap:20px;justify-content:center;width:max-content;margin:0 auto}
+
+.page{width:794px;height:1123px;background:var(--paper);color:var(--ink);padding:44px 46px 40px;position:relative;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.25);display:flex;flex-direction:column;gap:12px;direction:ltr}
+.head{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;border-bottom:3px solid var(--rule);padding-bottom:10px}
+.head .t{display:grid;gap:2px}
+.head .ar{font-size:20px;font-weight:700;direction:rtl;line-height:1.3}
+.head .en{font-size:13px;font-weight:500;letter-spacing:.02em}
+.head .case{text-align:right;display:grid;gap:0}
+.head .case small{font-size:9.5px;letter-spacing:.08em;text-transform:uppercase}
+.head .case b{font-family:var(--mono);font-size:22px;font-weight:600;letter-spacing:.04em}
+.head.mini{padding-bottom:6px;border-bottom-width:2px}
+.head.mini .ar{font-size:14px}
+.head.mini .case b{font-size:15px}
+
+.sec{display:grid;gap:8px}
+.bar{display:flex;justify-content:space-between;align-items:center;background:var(--ink);color:var(--paper);padding:4px 10px;font-size:12px;font-weight:600}
+.bar .ar{direction:rtl;font-weight:500}
+.bar .n{font-family:var(--mono);margin-right:8px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:6px 14px}
+.grid.three{grid-template-columns:1fr 1fr 1fr}
+.f{display:grid;gap:2px;min-width:0}
+.f.full{grid-column:1/-1}
+.lab{display:flex;justify-content:space-between;gap:8px;font-size:9.5px;line-height:1.3}
+.lab b{font-weight:600;letter-spacing:.02em}
+.lab i{font-style:normal;direction:rtl;color:var(--soft)}
+.in{white-space:pre-wrap;overflow-wrap:anywhere;font:inherit;font-size:12.5px;line-height:1.35;color:var(--ink);background:var(--paper);border:1px solid var(--rule);border-radius:0;padding:4px 7px;width:100%;min-height:26px;display:block}
+.in.ph{color:var(--hair)}
+.in.mono{font-family:var(--mono);font-size:12px}
+.in.ta{height:142px;font-size:11.5px;line-height:1.45;overflow:hidden}
+.files{display:grid;gap:5px}
+.file{display:grid;grid-template-columns:18px 1.15fr 1fr;align-items:center;gap:8px;font-size:10.5px}
+.file .k{font-family:var(--mono);font-weight:600;font-size:11px}
+.file .d{direction:rtl;text-align:right;color:var(--soft)}
+.note{font-size:10px;line-height:1.5;border:1px solid var(--rule);padding:6px 9px;direction:rtl;text-align:right}
+.note b{font-weight:700}
+.foot{position:absolute;left:46px;right:46px;bottom:18px;display:flex;justify-content:space-between;font-size:9px;color:var(--soft);border-top:1px solid var(--hair);padding-top:5px}
+.foot span:last-child{font-family:var(--mono)}
+
+@media print{
+  @page{size:A4;margin:0}
+  html,body{background:var(--paper)}
+  .toolbar,.hint{display:none}
+  .desk{padding:0;overflow:visible}
+  .pages{gap:0;width:auto}
+  .page{box-shadow:none;break-after:page;page-break-after:always}
+  .page:last-child{break-after:auto;page-break-after:auto}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<div class="toolbar" dir="rtl">
+  <h1>نموذج طلب D-U-N-S · شركة مدار التمكين · A4</h1>
+  <span class="msg" id="msg" role="status">نسخة للقراءة فقط.</span>
+  <button class="btn" type="button" id="pdfBtn">تحميل PDF</button>
+</div>
+<p class="hint">سجل للقراءة فقط بكل البيانات المُرسلة في طلب D&amp;B رقم 34923947، ورقم D-U-N-S الصادر 986473058.</p>
+
+<div class="desk">
+<div class="pages" id="pages">
+
+<!-- PAGE 1 -->
+<section class="page" id="page1">
+  <div class="head">
+    <div class="t">
+      <div class="ar">طلب رقم D-U-N-S · شركة مدار التمكين</div>
+      <div class="en">D-U-N-S Number Request · Madar alTamkeen Company</div>
+    </div>
+    <div class="case"><small>D&amp;B Case No.</small><b id="caseHead">34923947</b></div>
+  </div>
+
+  <div class="sec">
+    <div class="bar"><span><span class="n">00</span>Request Summary</span><span class="ar">ملخص الطلب</span></div>
+    <div class="grid">
+      <label class="f"><span class="lab"><b>Case Number</b><i>رقم الحالة</i></span><div class="in mono" id="case">34923947</div></label>
+      <label class="f"><span class="lab"><b>Date Submitted</b><i>تاريخ الإرسال</i></span><div class="in mono" id="submitted">2026-10-13</div></label>
+      <label class="f"><span class="lab"><b>Portal</b><i>البوابة</i></span><div class="in mono" id="portal">support.dnb.com/?CUST=APPLEDEV</div></label>
+      <label class="f"><span class="lab"><b>Login Email</b><i>بريد الدخول</i></span><div class="in mono" id="login">khaled@ehsan.org.sa</div></label>
+      <label class="f"><span class="lab"><b>User Group</b><i>فئة المستخدم</i></span><div class="in" id="group">Developer Program</div></label>
+      <label class="f"><span class="lab"><b>Request Type</b><i>نوع الطلب</i></span><div class="in" id="reqtype">Create New D-U-N-S (Search: No Match)</div></label>
+      <label class="f"><span class="lab"><b>Expected Completion</b><i>الموعد المتوقع</i></span><div class="in" id="expected">7–14 business days · 22 Oct – 2 Nov 2026</div></label>
+      <label class="f"><span class="lab"><b>Purpose</b><i>الغرض</i></span><div class="in" id="purpose">Apple Developer Program + Google Play Console</div></label>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div class="bar"><span><span class="n">01</span>Contact Info</span><span class="ar">بيانات التواصل</span></div>
+    <div class="grid">
+      <label class="f"><span class="lab"><b>First Name</b><i>الاسم الأول</i></span><div class="in" id="c_first">Khalid</div></label>
+      <label class="f"><span class="lab"><b>Last Name</b><i>اسم العائلة</i></span><div class="in" id="c_last">Alfouzan</div></label>
+      <label class="f"><span class="lab"><b>Company</b><i>الشركة</i></span><div class="in" id="c_company">Madar alTamkeen Company</div></label>
+      <label class="f"><span class="lab"><b>Job Title</b><i>المسمى الوظيفي</i></span><div class="in" id="c_title">Board Member</div></label>
+      <label class="f"><span class="lab"><b>Phone</b><i>الجوال</i></span><div class="in mono" id="c_phone">+966560509111</div></label>
+      <label class="f"><span class="lab"><b>Confirm Email</b><i>البريد الإلكتروني</i></span><div class="in mono" id="c_email">khaled@ehsan.org.sa</div></label>
+      <label class="f full"><span class="lab"><b>Street</b><i>الشارع</i></span><div class="in" id="c_street">7481 Ayesha Bint Abi Bakr St, Ar Rimal Dist., Additional No. 2515</div></label>
+      <label class="f"><span class="lab"><b>City</b><i>المدينة</i></span><div class="in" id="c_city">Buraidah</div></label>
+      <label class="f"><span class="lab"><b>State / Province</b><i>المنطقة</i></span><div class="in" id="c_state">Al Qassim</div></label>
+      <label class="f"><span class="lab"><b>Zip / Postal Code</b><i>الرمز البريدي</i></span><div class="in mono" id="c_zip">52363</div></label>
+      <label class="f"><span class="lab"><b>Country</b><i>الدولة</i></span><div class="in" id="c_country">Saudi Arabia</div></label>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div class="bar"><span><span class="n">02</span>D-U-N-S Search</span><span class="ar">البحث عن الشركة</span></div>
+    <div class="grid">
+      <label class="f"><span class="lab"><b>Country</b><i>الدولة</i></span><div class="in" id="s_country">Saudi Arabia</div></label>
+      <label class="f"><span class="lab"><b>Full Legal Business Name</b><i>الاسم القانوني</i></span><div class="in" id="s_name">Madar alTamkeen Company</div></label>
+      <label class="f full"><span class="lab"><b>Address</b><i>العنوان</i></span><div class="in" id="s_addr">7481 Ayesha Bint Abi Bakr St, Ar Rimal Dist.</div></label>
+    </div>
+    <div class="grid three">
+      <label class="f"><span class="lab"><b>City</b><i>المدينة</i></span><div class="in" id="s_city">Buraidah</div></label>
+      <label class="f"><span class="lab"><b>State / Region</b><i>المنطقة</i></span><div class="in" id="s_state">Al Qassim</div></label>
+      <label class="f"><span class="lab"><b>Postal Code</b><i>الرمز البريدي</i></span><div class="in mono" id="s_zip">52363</div></label>
+    </div>
+    <label class="f"><span class="lab"><b>Search Result</b><i>نتيجة البحث</i></span><div class="in" id="s_result">No Match found → Submitted request to create a new D-U-N-S</div></label>
+  </div>
+
+  <div class="foot"><span>Madar alTamkeen Company · Unified National No. 7050078752</span><span>Page 1 / 2</span></div>
+</section>
+
+<!-- PAGE 2 -->
+<section class="page" id="page2">
+  <div class="head mini">
+    <div class="t">
+      <div class="ar">طلب رقم D-U-N-S · شركة مدار التمكين</div>
+    </div>
+    <div class="case"><small>D&amp;B Case No.</small><b id="caseHead2">34923947</b></div>
+  </div>
+
+  <div class="sec">
+    <div class="bar"><span><span class="n">03</span>Create D-U-N-S Number</span><span class="ar">بيانات الشركة</span></div>
+    <div class="grid">
+      <label class="f full"><span class="lab"><b>Full Legal Business Name</b><i>الاسم القانوني الكامل</i></span><div class="in" id="b_name">Madar alTamkeen Company</div></label>
+      <label class="f"><span class="lab"><b>DBA / Tradestyle</b><i>الاسم التجاري</i></span><div class="in" id="b_dba">—</div></label>
+      <label class="f"><span class="lab"><b>Company Phone</b><i>هاتف الشركة</i></span><div class="in mono" id="b_phone">+966560509111</div></label>
+      <label class="f full"><span class="lab"><b>Business Street Address</b><i>العنوان</i></span><div class="in" id="b_street">7481 Ayesha Bint Abi Bakr St, Ar Rimal Dist.</div></label>
+      <label class="f"><span class="lab"><b>Address Line 2</b><i>سطر العنوان 2</i></span><div class="in" id="b_addr2">Additional No. 2515</div></label>
+      <label class="f"><span class="lab"><b>Business City</b><i>المدينة</i></span><div class="in" id="b_city">Buraidah</div></label>
+      <label class="f"><span class="lab"><b>Business State / Province</b><i>المنطقة</i></span><div class="in" id="b_state">Al Qassim</div></label>
+      <label class="f"><span class="lab"><b>Business Postal Code</b><i>الرمز البريدي</i></span><div class="in mono" id="b_zip">52363</div></label>
+      <label class="f"><span class="lab"><b>Business Country</b><i>الدولة</i></span><div class="in" id="b_country">Saudi Arabia</div></label>
+      <label class="f"><span class="lab"><b>Home-Based Business?</b><i>نشاط منزلي؟</i></span><div class="in" id="b_home">No</div></label>
+      <label class="f full"><span class="lab"><b>Business Structure / Legal Structure</b><i>الكيان القانوني</i></span><div class="in" id="b_legal">Simplified Joint Stock Company (Corporation)</div></label>
+      <label class="f"><span class="lab"><b>CEO Name</b><i>اسم الرئيس</i></span><div class="in" id="b_ceo">Bader Saleh Ali Alabdulmunim</div></label>
+      <label class="f"><span class="lab"><b>CEO Title</b><i>المنصب</i></span><div class="in" id="b_ceotitle">Chairman</div></label>
+      <label class="f"><span class="lab"><b>Company Website</b><i>الموقع الإلكتروني</i></span><div class="in" id="b_web">—</div></label>
+      <label class="f"><span class="lab"><b>Number of Employees</b><i>عدد الموظفين</i></span><div class="in mono" id="b_emp">7</div></label>
+      <label class="f"><span class="lab"><b>Date Business Started</b><i>تاريخ بدء النشاط</i></span><div class="in mono" id="b_date">5/15/2025</div></label>
+      <label class="f"><span class="lab"><b>SIC / NAICS</b><i>تصنيف النشاط</i></span><div class="in" id="b_sic">— (left blank, optional)</div></label>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div class="bar"><span><span class="n">04</span>Attachments</span><span class="ar">المرفقات</span></div>
+    <div class="files">
+      <div class="file"><span class="k">1</span><div class="in mono" id="a1">Madar-alTamkeen-CR-Details-English.pdf</div><span class="d">بيانات السجل بالإنجليزي (المركز السعودي للأعمال)</span></div>
+      <div class="file"><span class="k">2</span><div class="in mono" id="a2">Madar-alTamkeen-CR-Certificate-Arabic.pdf</div><span class="d">شهادة السجل التجاري (وزارة التجارة)</span></div>
+      <div class="file"><span class="k">3</span><div class="in mono" id="a3">Madar-alTamkeen-CR-Details-Arabic.pdf</div><span class="d">بيانات السجل بالعربي (المركز السعودي للأعمال)</span></div>
+      <div class="file"><span class="k">4</span><div class="in mono" id="a4">Madar-alTamkeen-National-Address-Proof.png</div><span class="d">إثبات العنوان الوطني، صالح حتى 26/3/2027</span></div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div class="bar"><span><span class="n">05</span>Additional Details</span><span class="ar">ملاحظة الطلب</span></div>
+    <div class="in ta" id="details">This D-U-N-S request is for Apple Developer Program and Google Play Console organization enrollment. Madar alTamkeen Company is a Simplified Joint Stock Company (a corporation with limited liability and its own legal personality), registered with the Saudi Ministry of Commerce under Unified National Number 7050078752 on 15 May 2025. It is managed by a Board of Directors of 5 members (Chairman: Bader Saleh Ali Alabdulmunim) and has 7 employees. Please record the legal structure as Corporation / Joint Stock Company, NOT as a Sole Proprietorship. The "One Person" note on the commercial registration means the company has a single shareholder; it is not an individual business. Attached: commercial registration (English and Arabic) and National Address proof. Contact: Khalid Alfouzan, khaled@ehsan.org.sa, +966560509111.</div>
+  </div>
+
+  <div class="sec">
+    <div class="bar"><span><span class="n">06</span>Result &amp; Follow-up</span><span class="ar">النتيجة والمتابعة</span></div>
+    <div class="grid three">
+      <label class="f"><span class="lab"><b>D-U-N-S Number</b><i>رقم D-U-N-S</i></span><div class="in mono" id="r_duns">986473058</div></label>
+      <label class="f"><span class="lab"><b>Date Received</b><i>تاريخ الاستلام</i></span><div class="in mono" id="r_date">2026-10-20</div></label>
+      <label class="f"><span class="lab"><b>Legal Business Name on D&amp;B</b><i>الاسم المسجّل</i></span><div class="in" id="r_legal">MADAR ALTAMKEEN COMPANY</div></label>
+    </div>
+    <div class="note"><b>تنبيه:</b> قبل التسجيل في Apple و Google انتظر يومين عمل بعد وصول الرقم، وافحصه في أداة Apple للبحث عن D-U-N-S، واستخدم الاسم كما أصدرته D&amp;B حرفياً: MADAR ALTAMKEEN COMPANY.</div>
+  </div>
+
+  <div class="foot"><span>Madar alTamkeen Company · Unified National No. 7050078752</span><span>Page 2 / 2</span></div>
+</section>
+
+</div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script>
+(function(){
+  var msg=document.getElementById('msg');
+  var btn=document.getElementById('pdfBtn');
+  btn.addEventListener('click',async function(){
+    if(!window.claude){window.print();return}
+    btn.disabled=true;msg.textContent='جاري تجهيز الملف…';
+    try{
+      var downloads=await window.claude.use('downloads');
+      if(!downloads){msg.textContent='التحميل غير متاح في هذا العرض. النسخة الجاهزة محفوظة في مجلد duns-lookup.';return}
+      if(!window.html2canvas||!window.jspdf){msg.textContent='تعذر تحميل مكتبة PDF. أعد تحميل الصفحة وحاول مرة ثانية.';return}
+      if(document.fonts&&document.fonts.ready)await document.fonts.ready;
+      var sx=window.scrollX,sy=window.scrollY;window.scrollTo(0,0);
+      var desk=document.querySelector('.desk');var dsx=desk.scrollLeft;desk.scrollLeft=0;
+      var pdf=new window.jspdf.jsPDF({unit:'mm',format:'a4',orientation:'portrait',compress:true});
+      var pages=[].slice.call(document.querySelectorAll('.page'));
+      for(var i=0;i<pages.length;i++){
+        var canvas=await window.html2canvas(pages[i],{scale:2.5,backgroundColor:'#ffffff',logging:false,scrollX:0,scrollY:0,onclone:function(doc){
+          [].slice.call(doc.querySelectorAll('.page')).forEach(function(p){p.style.boxShadow='none'});
+        }});
+        if(i)pdf.addPage('a4','portrait');
+        pdf.addImage(canvas.toDataURL('image/jpeg',0.95),'JPEG',0,0,210,297,undefined,'FAST');
+      }
+      window.scrollTo(sx,sy);desk.scrollLeft=dsx;
+      await downloads.save({filename:'Madar-alTamkeen-DUNS-Case-34923947.pdf',data:pdf.output('blob')});
+      msg.textContent='تم حفظ ملف PDF.';
+    }catch(err){
+      var c=err&&err.code;
+      msg.textContent=c==='declined'?'تم إلغاء الحفظ.':c==='rate_limited'?'نافذة حفظ مفتوحة بالفعل، انتظر قليلاً ثم حاول.':'تعذر إنشاء الملف. حاول مرة ثانية.';
+    }finally{btn.disabled=false}
+  });
+})();
+</script>
+
+</body></html>
