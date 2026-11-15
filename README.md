@@ -106,7 +106,7 @@ This D-U-N-S request is for Apple Developer Program and Google Play Console orga
 
 ## درس من تجربة سابقة: رفض Apple للكيان القانوني
 
-طلب سابق لمؤسسة «Nezam Health Establishment» رفضته Apple برسالة:
+طلب سابق لحاتم لمؤسسة تجارية أخرى رفضته Apple برسالة:
 
 > This organization could not be verified as a legal entity. If you are a sole proprietorship/single person company, enroll as an individual.
 
