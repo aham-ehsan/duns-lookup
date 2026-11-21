@@ -31,7 +31,7 @@
 
 > **✅ تحديث بيانات التواصل في D-U-N-S (2026-11-15):** حدّثنا بيانات التواصل لملف D-U-N-S رقم 986473058 بطلب التحديث 35015071. حساب بوابة D&B والتواصل صار على البريد `info@tmkeen.com.sa`، وطُلب إضافة الموقع `tmkeen.com.sa` والبريد الجديد إلى ملف الشركة. الجوال `+966560509111` بدون تغيير.
 
-> **⚠️ نتيجة التحديث (2026-11-21):** وصل بريد D&B «DUNS Number Update Completed - Case #35015071». الاسم والعنوان والمدينة والرمز البريدي و Legal Structure = Corporation كلها صحيحة، لكن **State ما زالت Ash Sharqiyah** (الصحيح Al Qassim). البريد لا يعرض الموقع والبريد والرئيس، فلا نعرف إن أُضيفت. التفاصيل ونص الرد في [المرحلة 3](#نتيجة-التحديث-2026-11-21).
+> **⚠️ نتيجة التحديث (2026-11-21):** وصل بريد D&B «DUNS Number Update Completed - Case #35015071». الاسم والعنوان والمدينة والرمز البريدي و Legal Structure = Corporation كلها صحيحة، لكن **State ما زالت Ash Sharqiyah** (الصحيح Al Qassim). فحص الملف في البوابة أظهر أن الرئيس Bader Saleh Ali Alabdulmunim (Chairman) أُضيف. الموقع والبريد لا يظهران في أي مكان، فلا نعرف إن أُضيفا. التفاصيل ونص الرد في [المرحلة 3](#نتيجة-التحديث-2026-11-21).
 
 > **تنبيه (2026-11-15):** النطاق `tmkeen.com.sa` لا يفتح، لأنه غير مربوط بخادم في إعدادات DNS (لا يوجد سجل A). البريد يعمل (MX على Google). Apple تشترط موقعاً عاماً يفتح، فيجب تشغيل الموقع قبل التسجيل.
 
@@ -52,6 +52,7 @@
 | 2026-11-16 | فحص الحالة في بوابة D&B: In Progress، ونوع الطلب Change-Update Company Information، وتاريخ الرد المتوقع 30 نوفمبر 2026. الموقع tmkeen.com.sa ما زال لا يفتح |
 | 2026-11-18 | فحص ثانٍ: لا تغيير (In Progress). الموقع ما زال لا يفتح |
 | 2026-11-21 | بريد D&B «DUNS Number Update Completed - Case #35015071». State ما زالت Ash Sharqiyah، وباقي البيانات صحيحة. تجهيز رد بطلب تصحيح المنطقة |
+| 2026-11-21 | فحص ملف D&B من نموذج التحديث بدون إرسال: أُضيف الرئيس Bader Saleh Ali Alabdulmunim (Chairman)، والمنطقة ما زالت Ash Sharqiyah |
 
 ## المرحلة 1: طلب الرقم الجديد
 
@@ -199,7 +200,28 @@ The legal name, street address and Legal Status (Corporation) are correct and sh
 | Legal Structure | Corporation | ✅ |
 | Country | Saudi Arabia | ✅ |
 
-البريد لا يذكر الموقع والبريد والرئيس، فيُتحقق منها في أداة Apple: https://developer.apple.com/enroll/duns-lookup/ بعد يومين عمل.
+مصدر Ash Sharqiyah ليس من طرفنا: اخترنا Al Qassim في نموذج الإنشاء (الحالة 34923947) وفي نموذج التحديث (الحالة 35015071)، وكل المستندات تذكر بريدة والقصيم. تكرار القيمة نفسها مرتين رغم ذلك يرجّح أن نظام D&B يحدد المنطقة تلقائياً من العنوان، لذلك يطلب الرد تصحيحها يدوياً.
+
+### ملف D&B بعد التحديث (فحص 2026-11-21 من نموذج Update or Correct DUNS، بدون إرسال)
+
+| الحقل | قبل التحديث | بعد التحديث | الحكم |
+|---|---|---|---|
+| Company Name | MADAR ALTAMKEEN COMPANY | بدون تغيير | ✅ |
+| Local Company Name | شركة مدار التمكين | بدون تغيير | ✅ |
+| Company Phone | 966 560509111 | بدون تغيير | ✅ |
+| Business Physical Address | Building Number 7481,Ayesha Bint Abi Bakr Street | بدون تغيير | ✅ |
+| Business City | Buraidah | بدون تغيير | ✅ |
+| Region / Territory | Ash Sharqiyah | **Ash Sharqiyah** | ❌ لم يُصحَّح |
+| Business Postal Code | 52363 | بدون تغيير | ✅ |
+| Local Company Address | لم يُسجَّل | `52363 SA` فقط | ⚠️ ناقص، لكن Apple و Google يستخدمان العنوان الإنجليزي |
+| Legal Status | Corporation | بدون تغيير | ✅ |
+| CEO / Owner / Principal Name | فارغ | **Bader Saleh Ali Alabdulmunim** | ✅ أُضيف |
+| CEO / Owner / Principal Title | فارغ | **Chairman** | ✅ أُضيف |
+| SIC / NAICS | 07210400 / 115112 | بدون تغيير | كما طلبنا |
+
+النتيجة: نُفّذ جزء الرئيس من الطلب، ولم يُنفَّذ تصحيح المنطقة. النموذج ليس فيه خانات للموقع والبريد.
+
+الموقع والبريد لا يظهران في بريد الإتمام ولا في النموذج، فيطلب الرد من D&B تأكيدهما. وما تراه Apple يُفحص في https://developer.apple.com/enroll/duns-lookup/ بعد يومين عمل.
 
 وصل بعده بريد استبيان رضا من `noreply@feedback.dnb.com`، وهو اختياري.
 
@@ -214,12 +236,13 @@ Thank you for updating D-U-N-S 986473058 (MADAR ALTAMKEEN COMPANY).
 
 One correction from our request is still missing: the State is listed as "Ash Sharqiyah". Our company is located in Buraidah, which is in the Al Qassim Region, not Ash Sharqiyah (Eastern Province). Please change the State to "Al Qassim", as shown in the attached National Address proof and commercial registration.
 
+We selected "Al Qassim" in both our original request (case 34923947) and our update request (case 35015071), but the record still shows "Ash Sharqiyah". If the region is set automatically from the address, please correct it manually.
+
 The company name, street address, city (Buraidah), zip (52363) and Legal Structure (Corporation) are correct and should remain unchanged.
 
 Could you also confirm that the following details from our request were added to the profile?
 - Website: tmkeen.com.sa
 - Email: info@tmkeen.com.sa
-- CEO / Principal: Bader Saleh Ali Alabdulmunim, Chairman
 
 Thank you,
 Khalid Alfouzan
