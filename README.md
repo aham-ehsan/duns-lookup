@@ -25,11 +25,13 @@
 |---|---|
 | 1. طلب رقم D-U-N-S جديد | ✅ مكتمل (صدر الرقم 2026-10-20) |
 | 2. تحديث بيانات الاتصال في السجل التجاري | ✅ مكتمل (نسخة السجل رقم 4) |
-| 3. تحديث بيانات التواصل في D-U-N-S | ✅ تم تقديم التحديث 2026-11-15 (الحالة 35015071): البريد info@tmkeen.com.sa والموقع tmkeen.com.sa، مع تصحيح المنطقة وإضافة الرئيس. في 2026-11-16 حالة الطلب In Progress، وتاريخ الرد المتوقع من D&B هو 30 نوفمبر 2026 |
-| 4. فتح حساب Google Play Console | ⏳ بعد التحديث |
+| 3. تحديث بيانات التواصل في D-U-N-S | ⚠️ اكتمل جزئياً 2026-11-21 (الحالة 35015071): بريد D&B «DUNS Number Update Completed»، لكن المنطقة ما زالت **Ash Sharqiyah** بدل Al Qassim. المطلوب: الرد على البريد نفسه بطلب التصحيح |
+| 4. فتح حساب Google Play Console | ⏳ بعد تصحيح المنطقة |
 | 5. فتح حساب Apple Developer | ⏳ بعد تشغيل الموقع |
 
-> **✅ تحديث بيانات التواصل في D-U-N-S (2026-11-15):** حدّثنا بيانات التواصل لملف D-U-N-S رقم 986473058 بطلب التحديث 35015071. حساب بوابة D&B والتواصل صار على البريد `info@tmkeen.com.sa`، وطُلب إضافة الموقع `tmkeen.com.sa` والبريد الجديد إلى ملف الشركة. الجوال `+966560509111` بدون تغيير. التحديث بانتظار اعتماد D&B.
+> **✅ تحديث بيانات التواصل في D-U-N-S (2026-11-15):** حدّثنا بيانات التواصل لملف D-U-N-S رقم 986473058 بطلب التحديث 35015071. حساب بوابة D&B والتواصل صار على البريد `info@tmkeen.com.sa`، وطُلب إضافة الموقع `tmkeen.com.sa` والبريد الجديد إلى ملف الشركة. الجوال `+966560509111` بدون تغيير.
+
+> **⚠️ نتيجة التحديث (2026-11-21):** وصل بريد D&B «DUNS Number Update Completed - Case #35015071». الاسم والعنوان والمدينة والرمز البريدي و Legal Structure = Corporation كلها صحيحة، لكن **State ما زالت Ash Sharqiyah** (الصحيح Al Qassim). البريد لا يعرض الموقع والبريد والرئيس، فلا نعرف إن أُضيفت. التفاصيل ونص الرد في [المرحلة 3](#نتيجة-التحديث-2026-11-21).
 
 > **تنبيه (2026-11-15):** النطاق `tmkeen.com.sa` لا يفتح، لأنه غير مربوط بخادم في إعدادات DNS (لا يوجد سجل A). البريد يعمل (MX على Google). Apple تشترط موقعاً عاماً يفتح، فيجب تشغيل الموقع قبل التسجيل.
 
@@ -48,6 +50,8 @@
 | 2026-11-15 | فتح ملف D&B للرقم 986473058: Legal Status مسجّل Corporation، والمنطقة مسجّلة خطأً Ash Sharqiyah، واسم الرئيس فارغ |
 | 2026-11-15 | إرسال طلب التحديث، ورقم الحالة 35015071 |
 | 2026-11-16 | فحص الحالة في بوابة D&B: In Progress، ونوع الطلب Change-Update Company Information، وتاريخ الرد المتوقع 30 نوفمبر 2026. الموقع tmkeen.com.sa ما زال لا يفتح |
+| 2026-11-18 | فحص ثانٍ: لا تغيير (In Progress). الموقع ما زال لا يفتح |
+| 2026-11-21 | بريد D&B «DUNS Number Update Completed - Case #35015071». State ما زالت Ash Sharqiyah، وباقي البيانات صحيحة. تجهيز رد بطلب تصحيح المنطقة |
 
 ## المرحلة 1: طلب الرقم الجديد
 
@@ -121,7 +125,7 @@ This D-U-N-S request is for Apple Developer Program and Google Play Console orga
 
 إذا ظهر الخطأ عند Apple: رابط **update your D&B profile** في رسالة الخطأ، وطلب تحديث Legal Structure مع إرفاق السجل، ثم إعادة المحاولة بعد يومين عمل. وإن تكرر: https://developer.apple.com/contact/phone/
 
-## المرحلة 3: تحديث ملف D-U-N-S (مُرسل، الحالة 35015071)
+## المرحلة 3: تحديث ملف D-U-N-S (الحالة 35015071، اكتمل جزئياً)
 
 ### المسار في البوابة
 1. https://support.dnb.com/?CUST=APPLEDEV والدخول بالبريد `info@tmkeen.com.sa`
@@ -178,6 +182,50 @@ The legal name, street address and Legal Status (Corporation) are correct and sh
 - رابط الفحص: https://support.dnb.com/?CUST=APPLEDEV، والدخول بالبريد `info@tmkeen.com.sa`، فتظهر الحالة المفتوحة في أعلى صفحة Submit Case.
 - الردود تصل إلى `info@tmkeen.com.sa`، والحالة في تبويب Case Status Report.
 - قد تتصل D&B بأحد مسؤولي الشركة المسجلين للتحقق.
+
+### نتيجة التحديث (2026-11-21)
+
+وصل إلى `info@tmkeen.com.sa` بريد من `globalcustomerservice@dnb.com` بعنوان «DUNS Number Update Completed - Case #35015071». يطلب البريد إدخال البيانات في Apple كما هي بالضبط:
+
+| الحقل في بريد D&B | القيمة | الحكم |
+|---|---|---|
+| DUNS | 986473058 | ✅ |
+| Company Name | MADAR ALTAMKEEN COMPANY | ✅ |
+| Trade Style | فارغ | ✅ لا يوجد اسم تجاري مختلف |
+| Street Address | Building Number 7481,Ayesha Bint Abi Bakr Street | ✅ |
+| City | Buraidah | ✅ |
+| State | **Ash Sharqiyah** | ❌ لم يُصحَّح، والصحيح Al Qassim |
+| Zip | 52363 | ✅ |
+| Legal Structure | Corporation | ✅ |
+| Country | Saudi Arabia | ✅ |
+
+البريد لا يذكر الموقع والبريد والرئيس، فيُتحقق منها في أداة Apple: https://developer.apple.com/enroll/duns-lookup/ بعد يومين عمل.
+
+وصل بعده بريد استبيان رضا من `noreply@feedback.dnb.com`، وهو اختياري.
+
+### الرد المطلوب على بريد D&B
+
+يُرسل بالضغط على **رد (Reply)** في بريد «DUNS Number Update Completed» نفسه، مع ترك العنوان كما هو حتى يُربط بالحالة 35015071. المرفقات: `documents/Madar-alTamkeen-National-Address-Proof.png` و `documents/Madar-alTamkeen-CR-Details-English.pdf`.
+
+```
+Hello,
+
+Thank you for updating D-U-N-S 986473058 (MADAR ALTAMKEEN COMPANY).
+
+One correction from our request is still missing: the State is listed as "Ash Sharqiyah". Our company is located in Buraidah, which is in the Al Qassim Region, not Ash Sharqiyah (Eastern Province). Please change the State to "Al Qassim", as shown in the attached National Address proof and commercial registration.
+
+The company name, street address, city (Buraidah), zip (52363) and Legal Structure (Corporation) are correct and should remain unchanged.
+
+Could you also confirm that the following details from our request were added to the profile?
+- Website: tmkeen.com.sa
+- Email: info@tmkeen.com.sa
+- CEO / Principal: Bader Saleh Ali Alabdulmunim, Chairman
+
+Thank you,
+Khalid Alfouzan
+Board Member, MADAR ALTAMKEEN COMPANY
++966560509111
+```
 
 ## المرحلة 4 و 5: Google Play و Apple
 
