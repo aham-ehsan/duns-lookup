@@ -4,6 +4,17 @@
 
 توثيق طلب رقم D-U-N-S من Dun & Bradstreet لشركة مدار التمكين، وتحديثه، والخطوات التالية لفتح حسابي Apple Developer و Google Play Console كمنظمة.
 
+## المراجع
+
+الخطوات بالتفصيل، بالقيم والمشاكل وحلولها، في مجلد [docs](docs/README.md):
+[المستندات ونوع الكيان](docs/01-documents-and-legal-entity.md) ·
+[طلب رقم جديد](docs/02-dnb-new-duns.md) ·
+[تحديث الملف](docs/03-dnb-update-duns.md) ·
+[التحقق بخطوتين](docs/04-google-workspace-2sv.md) ·
+[Google Play](docs/05-google-play-console.md) ·
+[Apple](docs/06-apple-developer.md) ·
+[المشاكل والحلول](docs/troubleshooting.md)
+
 ## الحالة الحالية
 
 | البند | القيمة |
@@ -26,7 +37,7 @@
 | 1. طلب رقم D-U-N-S جديد | ✅ مكتمل (صدر الرقم 2026-10-20) |
 | 2. تحديث بيانات الاتصال في السجل التجاري | ✅ مكتمل (نسخة السجل رقم 4) |
 | 3. تحديث بيانات التواصل في D-U-N-S | ⚠️ اكتمل جزئياً 2026-11-21 (الحالة 35015071): بريد D&B «DUNS Number Update Completed»، لكن المنطقة ما زالت **Ash Sharqiyah** بدل Al Qassim. المطلوب: الرد على البريد نفسه بطلب التصحيح |
-| 4. فتح حساب Google Play Console | ▶️ بدأ 2026-11-21، قبل تصحيح المنطقة، لأن نموذج العنوان السعودي عند Google ليس فيه خانة منطقة |
+| 4. فتح حساب Google Play Console | ▶️ التسجيل جارٍ منذ 2026-11-22: ملف الدفع أُنشئ ببيانات D&B، والخطوة الحالية Your organization. بدأ قبل تصحيح المنطقة لأن نموذج العنوان السعودي عند Google ليس فيه خانة منطقة |
 | 5. فتح حساب Apple Developer | ⏳ بعد تشغيل الموقع |
 
 > **✅ تحديث بيانات التواصل في D-U-N-S (2026-11-15):** حدّثنا بيانات التواصل لملف D-U-N-S رقم 986473058 بطلب التحديث 35015071. حساب بوابة D&B والتواصل صار على البريد `info@tmkeen.com.sa`، وطُلب إضافة الموقع `tmkeen.com.sa` والبريد الجديد إلى ملف الشركة. الجوال `+966560509111` بدون تغيير.
@@ -57,6 +68,9 @@
 | 2026-11-22 | بدء التسجيل في Play Console بحساب info@tmkeen.com.sa. Google يشترط تفعيل التحقق بخطوتين أولاً، ومحاولة التفعيل رُفضت برسالة «We couldn't verify it's you» |
 | 2026-11-22 | الحل من لوحة Google Workspace: إيقاف «اختبار التحقق من تسجيل الدخول» 10 دقائق للمستخدم، ثم إضافة Authenticator وتفعيل التحقق بخطوتين. Play Console فتح صفحة اختيار نوع الحساب: مؤسسة ← شركة أو نشاط تجاري |
 | 2026-11-22 | Play Console: اسم المطوّر `Madar alTamkeen`. ملف دفع Google الموجود (باسم tmkeen.com.sa، ومستخدم لـ Workspace) لا يطابق D&B. أُدخل رقم D-U-N-S، وGoogle جلب من D&B: MADAR ALTAMKEEN COMPANY, Building Number 7481,Ayesha Bint Abi Bakr Street, Buraidah 52363, Saudi Arabia، بدون منطقة |
+| 2026-11-22 | إنشاء ملف دفع جديد في Play Console ببيانات D&B: Registry Dun & Bradstreet، D-U-N-S 986473058، MADAR ALTAMKEEN COMPANY |
+| 2026-11-22 | الوصول إلى شاشة Your organization: الحجم 1 - 10، والجوال +966 560509111، والموقع https://tmkeen.com.sa |
+| 2026-11-22 | إضافة مجلد `docs/` بمراجع الخطوات والمشاكل وحلولها |
 
 ## المرحلة 1: طلب الرقم الجديد
 
@@ -273,6 +287,7 @@ Board Member, MADAR ALTAMKEEN COMPANY
 
 | المسار | الوصف |
 |---|---|
+| `docs/` | مراجع الخطوات بالتفصيل، والمشاكل وحلولها |
 | `documents/Madar-alTamkeen-CR-Details-English.pdf` | بيانات السجل بالإنجليزي، نسخة 4 (2026-11-15) |
 | `documents/Madar-alTamkeen-CR-Details-Arabic.pdf` | بيانات السجل بالعربي، نسخة 4 (2026-11-15) |
 | `documents/Madar-alTamkeen-CR-Certificate-Arabic.pdf` | شهادة السجل التجاري (وزارة التجارة) |
