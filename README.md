@@ -72,7 +72,8 @@
 | 2026-11-22 | الوصول إلى شاشة Your organization: الحجم 1 - 10، والجوال +966 560509111، والموقع https://tmkeen.com.sa |
 | 2026-11-22 | إضافة مجلد `docs/` بمراجع الخطوات والمشاكل وحلولها |
 | 2026-11-22 | Play Console: إكمال Public profile (الجوال +966560509111 والبريد info@tmkeen.com.sa بعد التحقق) و About you (إعلان حساب Google شخصي سابق والتحقق منه) و Apps (أكثر من 10 تطبيقات، We don't know yet، None of the above) و How Google contacts you (Khalid Alfouzan، info@tmkeen.com.sa، English، +966560509111) و Terms. التسجيل متوقف عند دفع 25 دولاراً بانتظار المالية |
-| 2026-11-22 | بدء التجهيز لحساب Apple Developer أثناء انتظار الدفع |
+| 2026-11-22 | بدء التجهيز لحساب Apple Developer أثناء انتظار الدفع. القرار: البدء الآن بكتابة المنطقة Al Qassim، لأن Apple تطلب الدفع بعد الموافقة فقط. الموقع قيد التجهيز |
+| 2026-11-22 | إنشاء حساب Apple جديد للشركة باسم Khalid Alfouzan وإيميل info@tmkeen.com.sa، بدل الحساب الشخصي الذي استُخدم في الطلب السابق |
 
 ## المرحلة 1: طلب الرقم الجديد
 
