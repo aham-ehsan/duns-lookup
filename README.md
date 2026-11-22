@@ -56,6 +56,7 @@
 | 2026-11-21 | قرار البدء في Google Play Console الآن، وتصحيح المنطقة في D&B بعده. السبب: نموذج العنوان السعودي عند Google يحتوي الاسم والعنوان والمدينة والرمز البريدي فقط، وكلها صحيحة في D&B. النطاق tmkeen.com.sa فيه سجل TXT من نوع google-site-verification، مما يسهّل التحقق من الموقع في Search Console |
 | 2026-11-22 | بدء التسجيل في Play Console بحساب info@tmkeen.com.sa. Google يشترط تفعيل التحقق بخطوتين أولاً، ومحاولة التفعيل رُفضت برسالة «We couldn't verify it's you» |
 | 2026-11-22 | الحل من لوحة Google Workspace: إيقاف «اختبار التحقق من تسجيل الدخول» 10 دقائق للمستخدم، ثم إضافة Authenticator وتفعيل التحقق بخطوتين. Play Console فتح صفحة اختيار نوع الحساب: مؤسسة ← شركة أو نشاط تجاري |
+| 2026-11-22 | Play Console: اسم المطوّر `Madar alTamkeen`. ملف دفع Google الموجود (باسم tmkeen.com.sa، ومستخدم لـ Workspace) لا يطابق D&B. أُدخل رقم D-U-N-S، وGoogle جلب من D&B: MADAR ALTAMKEEN COMPANY, Building Number 7481,Ayesha Bint Abi Bakr Street, Buraidah 52363, Saudi Arabia، بدون منطقة |
 
 ## المرحلة 1: طلب الرقم الجديد
 
