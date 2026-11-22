@@ -54,6 +54,7 @@
 | 2026-11-21 | بريد D&B «DUNS Number Update Completed - Case #35015071». State ما زالت Ash Sharqiyah، وباقي البيانات صحيحة. تجهيز رد بطلب تصحيح المنطقة |
 | 2026-11-21 | فحص ملف D&B من نموذج التحديث بدون إرسال: أُضيف الرئيس Bader Saleh Ali Alabdulmunim (Chairman)، والمنطقة ما زالت Ash Sharqiyah |
 | 2026-11-21 | قرار البدء في Google Play Console الآن، وتصحيح المنطقة في D&B بعده. السبب: نموذج العنوان السعودي عند Google يحتوي الاسم والعنوان والمدينة والرمز البريدي فقط، وكلها صحيحة في D&B. النطاق tmkeen.com.sa فيه سجل TXT من نوع google-site-verification، مما يسهّل التحقق من الموقع في Search Console |
+| 2026-11-22 | بدء التسجيل في Play Console بحساب info@tmkeen.com.sa. Google يشترط تفعيل التحقق بخطوتين أولاً، ومحاولة التفعيل رُفضت برسالة «We couldn't verify it's you» |
 
 ## المرحلة 1: طلب الرقم الجديد
 
