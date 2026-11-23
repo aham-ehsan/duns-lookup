@@ -81,6 +81,7 @@
 | 2026-11-23 | Play Console: إعادة التسجيل باختيار ملف الدفع MADAR ALTAMKEEN COMPANY. بطاقة Visa مسبقة الدفع رُفضت (OR_CCR_61)، ثم نجح الدفع ببطاقة أخرى |
 | 2026-11-23 | إيصال الرسوم من payments.google.com (ملف MADAR ALTAMKEEN COMPANY): Developer Registration Fee، 25.00 دولاراً، مكتملة، معرّف المعاملة PDS.9012-5319-2267-63316. لم يصل بالبريد. وظهر في بريد info@ أن حساب Apple أُنشئ وتحقق إيميله رغم رسالة الخطأ |
 | 2026-11-23 | Apple: الموافقة على Apple Developer Agreement، ثم Enroll today ← Continue enrollment on the web ← بيانات Khalid Alfouzan ← **Company / Organization** ← MADAR ALTAMKEEN COMPANY و 986473058. ✅ Apple طابقت D&B وقبلت الكيان القانوني، ولا توجد خانة منطقة (Region: SA) |
+| 2026-11-23 | Apple: صلاحية التوقيع «My organization has given me the authority» لأن خالد عضو مجلس إدارة وليس المالك، فطلبت Apple مرجعاً: بدر العبدالمنعم (Chairman of the Board). إنشاء مجموعة Google `bader@tmkeen.com.sa` تحوّل إلى إيميل بدر الشخصي، لأن Apple تشترط إيميلاً على نطاق الشركة |
 | 2026-11-23 | إثبات الهوية في Play Console: تأكيد بيانات المؤسسة من D&B، ورفع السجل التجاري بالإنجليزي كـ «مُقتطف من السجلّ التجاري». حالة المؤسسة: مُرسلة. بقيت التفاصيل الشخصية |
 | 2026-11-23 | ✅ إنشاء حساب مؤسسة Google Play Console باسم Madar alTamkeen. بقيت 4 إجراءات: إثبات الهوية بالسجل التجاري، والإقرار بالجهة التجارية، وإثبات ملكية الموقع، وتأكيد أرقام الهواتف |
 
