@@ -313,6 +313,7 @@ Board Member, MADAR ALTAMKEEN COMPANY
 | المسار | الوصف |
 |---|---|
 | `docs/` | مراجع الخطوات بالتفصيل، والمشاكل وحلولها |
+| `docs/agreements/apple-developer-agreement-LYL207.md` | نص Apple Developer Agreement الذي وافق عليه حساب الشركة في 2026-11-23 |
 | `documents/Madar-alTamkeen-CR-Details-English.pdf` | بيانات السجل بالإنجليزي، نسخة 4 (2026-11-15) |
 | `documents/Madar-alTamkeen-CR-Details-Arabic.pdf` | بيانات السجل بالعربي، نسخة 4 (2026-11-15) |
 | `documents/Madar-alTamkeen-CR-Certificate-Arabic.pdf` | شهادة السجل التجاري (وزارة التجارة) |

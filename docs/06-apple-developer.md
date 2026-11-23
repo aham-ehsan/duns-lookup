@@ -2,7 +2,7 @@
 
 # 6. حساب Apple Developer
 
-- **الحالة:** ▶️ حساب Apple للشركة أُنشئ (2026-11-22)، و**التسجيل في Apple Developer لم يبدأ بعد**.
+- **الحالة:** ▶️ حساب Apple للشركة أُنشئ (2026-11-22). في 2026-11-23 دخلنا developer.apple.com ووافقنا على **Apple Developer Agreement** (حساب المطوّر المجاني). **التسجيل في Apple Developer Program المدفوع لم يبدأ بعد**.
 - **صاحب الحساب:** خالد الفوزان (Khalid Alfouzan)، عضو مجلس الإدارة، بإيميل `info@tmkeen.com.sa`.
 - **الرسوم:** 99 دولاراً سنوياً، وتُدفع **بعد** موافقة Apple على المنظمة، فالبدء لا يكلف شيئاً.
 - **ما ينقص قبل التسجيل:** موقع `tmkeen.com.sa` يفتح (قيد التجهيز)، ويُفضّل تصحيح المنطقة في D&B إلى Al Qassim.
@@ -18,6 +18,14 @@
 | فحص رقم D-U-N-S كما تراه Apple | https://developer.apple.com/enroll/duns-lookup/ |
 | دعم Apple Developer | https://developer.apple.com/contact/ |
 | دعم حساب Apple | https://getsupport.apple.com |
+| صفحة الحساب في Apple Developer (منها يبدأ التسجيل) | https://developer.apple.com/account |
+| نص Apple Developer Agreement الذي وافقنا عليه | [agreements/apple-developer-agreement-LYL207.md](agreements/apple-developer-agreement-LYL207.md) |
+
+## أول دخول إلى developer.apple.com (2026-11-23)
+
+1. **Apple Developer Agreement** (نسخة LYL207، March 18, 2025): اتفاقية حساب المطوّر المجاني، وليست اتفاقية البرنامج المدفوع. خيار «I'd like to receive communications...»: **No**، ثم **Agree**. النص كاملاً محفوظ في [agreements/apple-developer-agreement-LYL207.md](agreements/apple-developer-agreement-LYL207.md).
+2. **Customize your experience with Apple Developer:** ملف شخصي اختياري للأخبار والتوصيات. اختيارنا: **I'm not interested**.
+3. بعدها صفحة **Account** في https://developer.apple.com/account، ومنها **Enroll** للتسجيل كمنظمة.
 
 ## الخطوات القادمة بالترتيب
 
