@@ -194,6 +194,25 @@ I am creating this developer account on behalf of Madar alTamkeen Company to pub
 
 **إعادة البدء:** إذا أُغلقت صفحة التسجيل وبدأت من جديد، تظهر في **Select a payments profile** ثلاثة خيارات. اختر **MADAR ALTAMKEEN COMPANY** (الملف الذي فيه D-U-N-S 986473058)، وليس `tmkeen.com.sa` ولا Create new.
 
+## إيصال الرسوم
+
+الإيصال **لا يصل بالبريد**. يوجد فقط في مركز الدفع:
+
+1. https://payments.google.com/gp/w/home/activity بحساب `info@tmkeen.com.sa`.
+2. من السهم ▼ أعلى الصفحة اختر ملف **MADAR ALTAMKEEN COMPANY**. ملف `tmkeen.com.sa` يظهر «لا تتوفّر أيّ أنشطة».
+3. **النشاط** ← عملية **Developer Registration Fee** ← **Ctrl + P** ← **Save as PDF**.
+
+| البند | القيمة |
+|---|---|
+| البيان | Developer Registration Fee، تطبيقات Google Play |
+| المبلغ | 25.00 دولاراً أمريكياً |
+| التاريخ | 2026-11-22، الساعة 11:03 م |
+| الحالة | مكتملة |
+| معرّف المعاملة | `PDS.9012-5319-2267-63316` |
+| البائع | Google LLC |
+
+هذا إيصال دفع، وليس فاتورة ضريبية برقم ضريبي.
+
 ## بعد إنشاء الحساب (2026-11-23)
 
 لوحة Play Console تعرض «مرحباً بك في حسابك على Madar alTamkeen»، **حساب المؤسسة**، وتطلب 4 إجراءات قبل النشر:
