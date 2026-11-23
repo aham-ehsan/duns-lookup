@@ -25,7 +25,27 @@
 
 1. **Apple Developer Agreement** (نسخة LYL207، March 18, 2025): اتفاقية حساب المطوّر المجاني، وليست اتفاقية البرنامج المدفوع. خيار «I'd like to receive communications...»: **No**، ثم **Agree**. النص كاملاً محفوظ في [agreements/apple-developer-agreement-LYL207.md](agreements/apple-developer-agreement-LYL207.md).
 2. **Customize your experience with Apple Developer:** ملف شخصي اختياري للأخبار والتوصيات. اختيارنا: **I'm not interested**.
-3. بعدها صفحة **Account** في https://developer.apple.com/account، ومنها **Enroll** للتسجيل كمنظمة.
+3. بعدها صفحة **Account** في https://developer.apple.com/account، ومنها **Enroll today** للتسجيل كمنظمة.
+
+## التسجيل في Apple Developer Program (2026-11-23)
+
+1. **Enroll with the Apple Developer app:** الصفحة تقترح التطبيق على iPhone أو iPad أو Mac. اخترنا **Continue enrollment on the web**، لأن جوال المسجِّل Android، ولأن التطبيق يطلب غالباً تصوير هوية صاحب الحساب.
+2. **البيانات الشخصية** (لا يمكن تعديل الاسم بعد Continue): `Khalid` / `Alfouzan` (إملاء السجل التجاري ALFOUZAN)، الجوال `+966 560509111` (Apple قد تتصل عليه)، والعنوان العنوان الوطني للشركة في بريدة 52363 (مقبول في هذه الشاشة)، والدولة Saudi Arabia.
+3. **Select your entity type:** الاختيار الافتراضي كان **Individual / Sole Proprietor**، وهو خطأ الطلب السابق. اخترنا **Company / Organization**. لا نختار Nonprofit لأن الشركة مسجلة Corporation.
+4. **To enroll, you will need:** كيان قانوني ✅، وصلاحية التوقيع ✅ (عضو مجلس إدارة)، وموقع عام يفتح ❌ (`tmkeen.com.sa` لا يفتح بعد)، وإيميل عمل ✅، ورقم D-U-N-S ✅.
+5. **Tell us about your organization:** Legal Entity Name `MADAR ALTAMKEEN COMPANY` بدون إضافة نوع الكيان (كلمة COMPANY موجودة)، و D-U-N-S `986473058`.
+6. **✅ Just a bit more info:** Apple طابقت ملف D&B **وقبلت الكيان القانوني**، بدون رسالة «could not be verified as a legal entity». البيانات التي جلبتها:
+
+| الخانة | القيمة من D&B |
+|---|---|
+| Legal Entity Name | MADAR ALTAMKEEN COMPANY |
+| Local Business Name | MADAR ALTAMKEEN COMPANY |
+| Address | Building Number 7481,Ayesha Bint Abi Bakr Street |
+| City / Town | Buraidah |
+| Zip / Postal Code | 52363 |
+| Region | SA |
+
+**لا توجد خانة منطقة (State)** في هذه الشاشة، فخطأ Ash Sharqiyah في D&B لم يظهر في Apple. الخانات المتبقية: Website `https://tmkeen.com.sa`، والجوال `+966 560509111`، وإيميل العمل `info@tmkeen.com.sa`، والمسمى `Board Member`، وتأكيد صلاحية إلزام الشركة.
 
 ## الخطوات القادمة بالترتيب
 
