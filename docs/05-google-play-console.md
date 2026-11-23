@@ -200,7 +200,10 @@ I am creating this developer account on behalf of Madar alTamkeen Company to pub
 
 1. https://payments.google.com/gp/w/home/activity بحساب `info@tmkeen.com.sa`.
 2. من السهم ▼ أعلى الصفحة اختر ملف **MADAR ALTAMKEEN COMPANY**. ملف `tmkeen.com.sa` يظهر «لا تتوفّر أيّ أنشطة».
-3. **النشاط** ← عملية **Developer Registration Fee** ← **Ctrl + P** ← **Save as PDF**.
+3. **النشاط** ← عملية **Developer Registration Fee**، فتظهر التفاصيل في لوحة جانبية.
+4. **الطباعة لا تنفع:** Ctrl + P يطبع قائمة النشاط فقط بدون اللوحة الجانبية. الحل: لقطتا شاشة للوحة كاملة، ثم تُجمعان في PDF.
+
+الإيصال محفوظ في `documents/Google-Play-Registration-Receipt.pdf`: جدول بالبيانات ولقطتا لوحة التفاصيل.
 
 | البند | القيمة |
 |---|---|

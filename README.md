@@ -299,6 +299,7 @@ Board Member, MADAR ALTAMKEEN COMPANY
 | `documents/Madar-alTamkeen-CR-Details-Arabic.pdf` | بيانات السجل بالعربي، نسخة 4 (2026-11-15) |
 | `documents/Madar-alTamkeen-CR-Certificate-Arabic.pdf` | شهادة السجل التجاري (وزارة التجارة) |
 | `documents/Madar-alTamkeen-National-Address-Proof.png` | إثبات العنوان الوطني، صالح حتى 26/3/2027 |
+| `documents/Google-Play-Registration-Receipt.pdf` | إيصال رسوم Google Play (25 دولاراً) للمالية، من لقطات مركز الدفع |
 | `archive/2026-10-cr-copy-3/` | السجل نسخة 3، المُرفق في الطلب الأول (قبل تحديث بيانات الاتصال) |
 | `forms/Madar-alTamkeen-DUNS-Case-34923947.pdf` | نموذج A4 بكل البيانات المُرسلة في الطلب 34923947 ورقم D-U-N-S |
 | `pages/duns-steps-tracker.html` | صفحة الخطوات التفاعلية مع أزرار النسخ |
