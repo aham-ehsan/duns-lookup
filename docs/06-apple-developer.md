@@ -2,10 +2,29 @@
 
 # 6. حساب Apple Developer
 
-- **الحالة:** ▶️ بدأ 2026-11-22 بإنشاء حساب Apple للشركة.
-- **صاحب الحساب:** خالد الفوزان (Khalid Alfouzan)، عضو مجلس الإدارة.
+- **الحالة:** ▶️ حساب Apple للشركة أُنشئ (2026-11-22)، و**التسجيل في Apple Developer لم يبدأ بعد**.
+- **صاحب الحساب:** خالد الفوزان (Khalid Alfouzan)، عضو مجلس الإدارة، بإيميل `info@tmkeen.com.sa`.
 - **الرسوم:** 99 دولاراً سنوياً، وتُدفع **بعد** موافقة Apple على المنظمة، فالبدء لا يكلف شيئاً.
-- **رابط التسجيل:** https://developer.apple.com/programs/enroll/
+- **ما ينقص قبل التسجيل:** موقع `tmkeen.com.sa` يفتح (قيد التجهيز)، ويُفضّل تصحيح المنطقة في D&B إلى Al Qassim.
+
+## روابط سريعة
+
+| الغرض | الرابط |
+|---|---|
+| الدخول لحساب Apple وإدارته | https://account.apple.com |
+| إنشاء حساب Apple (لا تستخدمه، الحساب موجود) | https://account.apple.com/account |
+| تطبيق Apple Developer على iPhone و iPad | https://apps.apple.com/app/apple-developer/id640199958 |
+| التسجيل في برنامج المطورين | https://developer.apple.com/programs/enroll/ |
+| فحص رقم D-U-N-S كما تراه Apple | https://developer.apple.com/enroll/duns-lookup/ |
+| دعم Apple Developer | https://developer.apple.com/contact/ |
+| دعم حساب Apple | https://getsupport.apple.com |
+
+## الخطوات القادمة بالترتيب
+
+1. **تشغيل الموقع** `tmkeen.com.sa`، لأن Apple تراجع الموقع المكتوب في الطلب.
+2. **تصحيح المنطقة في D&B** إلى Al Qassim (يُفضّل). انظر [الرد على D&B](03-dnb-update-duns.md#الرد-على-dnb-لتصحيح-المنطقة).
+3. **فحص الرقم** في أداة D-U-N-S Lookup بعد يومي عمل من أي تعديل في D&B.
+4. **التسجيل كـ Organization** بحساب خالد. الدفع بعد موافقة Apple فقط.
 
 ## قرار: البدء قبل اكتمال الشروط
 
@@ -35,6 +54,31 @@ https://account.apple.com ← **Create Your Apple Account**، ويفضّل في 
 | Announcements / Apps, Music, TV and More | بدون علامة | رسائل تسويقية اختيارية |
 
 بعدها رمز تحقق على الإيميل، ثم رمز على الجوال.
+
+### مشاكل إنشاء الحساب (2026-11-22)
+
+1. **«Your account cannot be created at this time»** ظهرت بعد الضغط على Continue في نموذج المتصفح. رفض عام لا يذكر السبب. الأسباب الشائعة:
+   - رقم الجوال مربوط بحسابات Apple كثيرة.
+   - محاولات كثيرة من نفس الجهاز أو الشبكة.
+   - VPN، أو إضافات المتصفح، أو نافذة التصفح الخاصة.
+2. **محاولة لاحقة وصلت إلى «Verify phone number».** كُتب فيها أولاً **رمز الإيميل** بالخطأ. رمز الإيميل يصل في بريد «Verify your Apple Account email address»، أما هذه الشاشة فتطلب رمز **SMS** على الجوال.
+3. **رمز SMS لم يصل** إلى `+966560509111`، وظهرت رسالة الرفض نفسها مرة ثانية. والشاشة كانت تقول «Enter the verification code sent to:» بدون رقم.
+4. «Did not receive a code?» عرضت ثلاثة خيارات: **Resend text** و **Call me** و **Use a different phone number**.
+
+**الحلول بالترتيب:**
+- **Call me:** Apple تتصل وتقول الرمز بصوت، إذا كان جوال الشركة حاضراً.
+- **رقم آخر** يستقبل SMS، مثل جوال خالد، ثم يُضاف رقم الشركة لاحقاً **كرقم موثوق ثانٍ** من إعدادات الحساب.
+- **التوقف يوماً**، لأن تكرار المحاولات يطيل الحظر.
+- **تطبيق Apple Developer على iPhone**: تبويب Account ← Sign In ← Create Apple Account. الدخول فيه **منفصل عن iCloud الجوال**، فلا يحتاج تسجيل خروج الحساب الشخصي.
+- إن استمر الرفض: https://getsupport.apple.com ← Apple Account.
+
+### النتيجة: الحساب أُنشئ رغم الخطأ
+
+في 2026-11-23 ظهر في صندوق `info@tmkeen.com.sa` بريدان من Apple موجّهان إلى Khalid Alfouzan:
+- «التحقق من عنوان البريد الإلكتروني لحساب Apple: تم التحقق من عنوان البريد الإلكتروني...»
+- «تم تحديث معلومات حساب Apple الخاص بك».
+
+يعني أن **حساب Apple موجود**. **لا تنشئ حساباً جديداً.** ادخل من https://account.apple.com بـ `info@tmkeen.com.sa` وكلمة المرور، وراجع رقم الجوال الموثوق.
 
 ## الشروط قبل التسجيل
 
@@ -68,12 +112,12 @@ https://account.apple.com ← **Create Your Apple Account**، ويفضّل في 
 
 ## الخطوة 2: التسجيل
 
-1. افتح https://developer.apple.com/programs/enroll/ وسجّل بحساب Apple على إيميل الشركة.
+1. افتح https://developer.apple.com/programs/enroll/ أو تطبيق Apple Developer، وادخل بحساب Apple الموجود `info@tmkeen.com.sa`.
 2. اختر التسجيل كـ **Organization**، وليس Individual.
-3. أدخل الرقم `986473058` والبيانات **كما في ملف D&B حرفياً**.
+3. أدخل الرقم `986473058` والبيانات **كما في ملف D&B حرفياً**. المنطقة تُكتب Al Qassim.
 4. أدخل الموقع `https://tmkeen.com.sa`.
-5. Apple قد تتصل بأحد مسؤولي الشركة للتحقق من صلاحيته لتسجيل الشركة.
-6. ادفع 99 دولاراً.
+5. Apple قد تتصل بخالد للتحقق من صلاحيته لتسجيل الشركة.
+6. بعد موافقة Apple يصل بريد بطريقة الدفع، فادفع 99 دولاراً.
 
 تُكمَل هذه الخطوات بالقيم الفعلية عند التنفيذ.
 

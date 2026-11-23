@@ -6,13 +6,16 @@
 
 ## المراجع
 
-الخطوات بالتفصيل، بالقيم والمشاكل وحلولها، في مجلد [docs](docs/README.md):
+| الدليل | المحتوى |
+|---|---|
+| 📱 **[دليل Google Play Console](docs/05-google-play-console.md)** | كل خطوات التسجيل بقيمها، والإيصال، وإثبات الهوية، والتحقق من الموقع والجوال، والروابط |
+| 🍎 **[دليل Apple Developer](docs/06-apple-developer.md)** | حساب Apple للشركة ومشاكل إنشائه، والشروط قبل التسجيل، وخطوات التسجيل، والروابط |
+
+باقي الخطوات بالتفصيل في مجلد [docs](docs/README.md):
 [المستندات ونوع الكيان](docs/01-documents-and-legal-entity.md) ·
 [طلب رقم جديد](docs/02-dnb-new-duns.md) ·
 [تحديث الملف](docs/03-dnb-update-duns.md) ·
 [التحقق بخطوتين](docs/04-google-workspace-2sv.md) ·
-[Google Play](docs/05-google-play-console.md) ·
-[Apple](docs/06-apple-developer.md) ·
 [المشاكل والحلول](docs/troubleshooting.md)
 
 ## الحالة الحالية
@@ -38,7 +41,7 @@
 | 2. تحديث بيانات الاتصال في السجل التجاري | ✅ مكتمل (نسخة السجل رقم 4) |
 | 3. تحديث بيانات التواصل في D-U-N-S | ⚠️ اكتمل جزئياً 2026-11-21 (الحالة 35015071): بريد D&B «DUNS Number Update Completed»، لكن المنطقة ما زالت **Ash Sharqiyah** بدل Al Qassim. المطلوب: الرد على البريد نفسه بطلب التصحيح |
 | 4. فتح حساب Google Play Console | ✅ أُنشئ 2026-11-23 (حساب مؤسسة Madar alTamkeen، ودُفعت الرسوم). ⏳ بقي: إثبات الهوية بالسجل التجاري، والإقرار بالجهة التجارية، وإثبات ملكية الموقع، وتأكيد أرقام الهواتف |
-| 5. فتح حساب Apple Developer | ▶️ بدأ 2026-11-22 بإنشاء حساب Apple للشركة باسم Khalid Alfouzan. إنشاء الحساب من المتصفح رُفض، والموقع قيد التجهيز |
+| 5. فتح حساب Apple Developer | ▶️ حساب Apple للشركة أُنشئ 2026-11-22 باسم Khalid Alfouzan رغم رسالة الرفض. ⏳ التسجيل كـ Organization ينتظر تشغيل الموقع |
 
 > **✅ تحديث بيانات التواصل في D-U-N-S (2026-11-15):** حدّثنا بيانات التواصل لملف D-U-N-S رقم 986473058 بطلب التحديث 35015071. حساب بوابة D&B والتواصل صار على البريد `info@tmkeen.com.sa`، وطُلب إضافة الموقع `tmkeen.com.sa` والبريد الجديد إلى ملف الشركة. الجوال `+966560509111` بدون تغيير.
 
@@ -276,20 +279,34 @@ Board Member, MADAR ALTAMKEEN COMPANY
 +966560509111
 ```
 
-## المرحلة 4 و 5: Google Play و Apple
+## Google Play Console
 
-بعد بريد D&B بإتمام التحديث، انتظر يومين عمل، ثم:
+- ✅ **حساب مؤسسة** باسم **Madar alTamkeen** بإيميل `info@tmkeen.com.sa`، ورقم تعريف الحساب `8165465758097733916`. الرسوم 25 دولاراً دُفعت، والإيصال في `documents/Google-Play-Registration-Receipt.pdf`.
+- ⏳ **إثبات الهوية:** مستند المؤسسة (السجل التجاري) مُرسل، والتفاصيل الشخصية لخالد الفوزان بجوازه لم تكتمل.
+- ⏳ بعده: الإقرار بالجهة التجارية، وإثبات ملكية الموقع، وتأكيد أرقام الهواتف.
 
-| | Google Play Console | Apple Developer |
-|---|---|---|
-| نوع الحساب | Organization | Organization |
-| D-U-N-S | 986473058 | 986473058 |
-| الاسم | MADAR ALTAMKEEN COMPANY | MADAR ALTAMKEEN COMPANY |
-| العنوان | كما في ملف D&B | كما في ملف D&B |
-| الموقع | tmkeen.com.sa | tmkeen.com.sa (يجب أن يفتح) |
-| الرسوم | 25$ مرة واحدة | 99$ سنوياً |
+**الدليل الكامل: [docs/05-google-play-console.md](docs/05-google-play-console.md)**
 
-قبل Apple: افحص الرقم في https://developer.apple.com/enroll/duns-lookup/
+| الغرض | الرابط |
+|---|---|
+| لوحة Play Console | https://play.google.com/console/developers/8165465758097733916/home |
+| إيصال الرسوم (اختر ملف MADAR ALTAMKEEN COMPANY) | https://payments.google.com/gp/w/home/activity |
+| التحقق من ملكية الموقع | https://search.google.com/search-console |
+
+## Apple Developer
+
+- ✅ **حساب Apple للشركة** باسم Khalid Alfouzan وإيميل `info@tmkeen.com.sa`. أُنشئ رغم رسالة «Your account cannot be created at this time»، فلا يُنشأ حساب آخر.
+- ⏳ **التسجيل كـ Organization لم يبدأ.** ينتظر تشغيل موقع `tmkeen.com.sa`، ويُفضّل تصحيح المنطقة في D&B إلى Al Qassim قبله.
+- الرسوم 99 دولاراً سنوياً، وتُدفع بعد موافقة Apple فقط.
+
+**الدليل الكامل: [docs/06-apple-developer.md](docs/06-apple-developer.md)**
+
+| الغرض | الرابط |
+|---|---|
+| حساب Apple | https://account.apple.com |
+| التسجيل في برنامج المطورين | https://developer.apple.com/programs/enroll/ |
+| فحص رقم D-U-N-S كما تراه Apple | https://developer.apple.com/enroll/duns-lookup/ |
+| تطبيق Apple Developer على iPhone | https://apps.apple.com/app/apple-developer/id640199958 |
 
 ## الملفات
 
