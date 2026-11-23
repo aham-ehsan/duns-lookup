@@ -82,6 +82,20 @@ Apple تشترط إيميل المرجع على نطاق الشركة، و Works
 - **Legal Entity Type:** Company / Organization.
 - تعديل البيانات بعد الإرسال يكون عبر Apple فقط (رابط contact us في نفس الصفحة)، مع ذكر Enrollment ID.
 
+### بريد تأكيد الاستلام من Apple (2026-11-23)
+
+وصل إلى `info@tmkeen.com.sa` بريد «Dear Khalid Alfouzan, We've received your enrollment request...» فيه:
+
+| البند | القيمة |
+|---|---|
+| Enrollment ID | W25Z4X84PN |
+| Email / Work Email | info@tmkeen.com.sa |
+| Legal Entity | MADAR ALTAMKEEN COMPANY |
+| Address | Building Number 7481,Ayesha Bint Abi Bakr Street, Buraidah, **Ash Sharqiyah** 52363, Saudi Arabia |
+| Verification Contact | bader Alabdulmunim، Chairman of the Board، bader@tmkeen.com.sa، 560509111 |
+
+**المنطقة Ash Sharqiyah ظهرت هنا.** نموذج التسجيل عرض Region: SA فقط، لكن Apple خزّنت العنوان من D&B كاملاً بمنطقته الخاطئة. هذا لا يوقف الطلب، لأن البيانات مطابقة لـ D&B. لكنه عنوان رسمي للشركة عند Apple، وقد يظهر كعنوان البائع للمستخدمين في الاتحاد الأوروبي، لذلك **تصحيح المنطقة في D&B ما زال مطلوباً** (انظر [الرد على D&B](03-dnb-update-duns.md#الرد-على-dnb-لتصحيح-المنطقة)). بعد تصحيح D&B يُطلب من Apple تحديث العنوان عبر https://developer.apple.com/contact/ مع Enrollment ID.
+
 ### بعد الإرسال
 
 1. Apple تتحقق من **صلاحية خالد**، وقد تراسل المرجع على `bader@tmkeen.com.sa` (يصل حالياً إلى صندوق `info@`) أو تتصل على `+966 560509111`. **بدر يرد بنفسه** على ما يخصه، وخالد على ما يخصه.
