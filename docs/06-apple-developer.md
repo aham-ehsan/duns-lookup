@@ -6,6 +6,7 @@
 - **صاحب الحساب:** خالد الفوزان (Khalid Alfouzan)، عضو مجلس الإدارة، بإيميل `info@tmkeen.com.sa`.
 - **الرسوم:** 99 دولاراً سنوياً، وتُدفع **بعد** موافقة Apple على المنظمة، فالبدء لا يكلف شيئاً.
 - **ما ينقص قبل التسجيل:** موقع `tmkeen.com.sa` يفتح (قيد التجهيز)، ويُفضّل تصحيح المنطقة في D&B إلى Al Qassim.
+- **التواريخ:** إنشاء حساب Apple 2026-11-22، والاتفاقية والتسجيل والإرسال 2026-11-23 (قبل 11:57)، ومراسلة الدعم 2026-11-24. السجل الزمني الكامل بالأوقات في [timeline.md](timeline.md).
 
 ## روابط سريعة
 
@@ -21,13 +22,15 @@
 | صفحة الحساب في Apple Developer (منها يبدأ التسجيل) | https://developer.apple.com/account |
 | نص Apple Developer Agreement الذي وافقنا عليه | [agreements/apple-developer-agreement-LYL207.md](agreements/apple-developer-agreement-LYL207.md) |
 
-## أول دخول إلى developer.apple.com (2026-11-23)
+## أول دخول إلى developer.apple.com (2026-11-23، قبل 11:07)
 
 1. **Apple Developer Agreement** (نسخة LYL207، March 18, 2025): اتفاقية حساب المطوّر المجاني، وليست اتفاقية البرنامج المدفوع. خيار «I'd like to receive communications...»: **No**، ثم **Agree**. النص كاملاً محفوظ في [agreements/apple-developer-agreement-LYL207.md](agreements/apple-developer-agreement-LYL207.md).
 2. **Customize your experience with Apple Developer:** ملف شخصي اختياري للأخبار والتوصيات. اختيارنا: **I'm not interested**.
 3. بعدها صفحة **Account** في https://developer.apple.com/account، ومنها **Enroll today** للتسجيل كمنظمة.
 
 ## التسجيل في Apple Developer Program (2026-11-23)
+
+**الأوقات:** الخطوات 1 إلى 6 ومطابقة D&B قبل 11:12، والمرجع ومجموعة bader@ من 11:40 إلى قبل 11:48، والإرسال قبل 11:57.
 
 1. **Enroll with the Apple Developer app:** الصفحة تقترح التطبيق على iPhone أو iPad أو Mac. اخترنا **Continue enrollment on the web**، لأن جوال المسجِّل Android، ولأن التطبيق يطلب غالباً تصوير هوية صاحب الحساب.
 2. **البيانات الشخصية** (لا يمكن تعديل الاسم بعد Continue): `Khalid` / `Alfouzan` (إملاء السجل التجاري ALFOUZAN)، الجوال `+966 560509111` (Apple قد تتصل عليه)، والعنوان العنوان الوطني للشركة في بريدة 52363 (مقبول في هذه الشاشة)، والدولة Saudi Arabia.
@@ -64,6 +67,8 @@
 
 ### إيميل بدر على نطاق الشركة: مجموعة Google (مجانية)
 
+**التاريخ:** 2026-11-23. شاشة معلومات المجموعة الساعة 11:40، والإعدادات والإنشاء الساعة 11:42.
+
 Apple تشترط إيميل المرجع على نطاق الشركة، و Workspace فيه مستخدم واحد (`info@`). أنشأنا **مجموعة بريد** تحوّل الرسائل إلى إيميل بدر الشخصي، بدون ترخيص مدفوع:
 
 1. **التطبيقات ← Google Workspace ← مجموعات Google للأنشطة التجارية ← خيارات المشاركة:** السماح لمالكي المجموعات بالأعضاء الخارجيين وبالرسائل الواردة من خارج المؤسسة.
@@ -74,11 +79,11 @@ Apple تشترط إيميل المرجع على نطاق الشركة، و Works
 
 **المجموعة ليس لها صندوق بريد.** الرسائل تُحوَّل إلى صناديق الأعضاء، وتُحفظ في أرشيف https://groups.google.com/a/tmkeen.com.sa/g/bader (للاطلاع). **لا تُنشأ كاسم بديل على `info@`**، لأن رسائل Apple عندها تصل لصاحب الطلب لا لبدر.
 
-### الخطوة 11: المراجعة والإرسال
+### الخطوة 11: المراجعة والإرسال (2026-11-23، قبل 11:57)
 
 **المراجعة (confirm):** ملخص بكل البيانات، ثم **Submit**. القيم النهائية المُرسلة: الشركة MADAR ALTAMKEEN COMPANY و 986473058 وعنوان D&B و Region SA، والموقع `tmkeen.com.sa`، والجوال `+966 560509111`، وإيميل صاحب الطلب `info@tmkeen.com.sa`، والمرجع bader Alabdulmunim (Chairman of the Board) بإيميل `bader@tmkeen.com.sa` وجوال `+966 560509111` (نفس رقم صاحب الطلب).
 
-### ✅ أُرسل الطلب (2026-11-23)
+### ✅ أُرسل الطلب (2026-11-23، قبل 11:57)
 
 > **Your enrollment is being processed.** Enrollment ID: **W25Z4X84PN**
 > Once we verify your authority to sign legal agreements, we'll email you with instructions on how to complete your enrollment.
@@ -102,13 +107,15 @@ Apple تشترط إيميل المرجع على نطاق الشركة، و Works
 
 ### بعد الإرسال
 
+**من:** 2026-11-23. حتى 2026-11-24 لم يصل رد التحقق ولا رابط الدفع.
+
 1. Apple تتحقق من **صلاحية خالد**، وقد تراسل المرجع على `bader@tmkeen.com.sa` (يصل حالياً إلى صندوق `info@`) أو تتصل على `+966 560509111`. **بدر يرد بنفسه** على ما يخصه، وخالد على ما يخصه.
 2. بعد التحقق يصل بريد فيه تعليمات إكمال التسجيل: **دفع 99 دولاراً** والموافقة على اتفاقية Apple Developer Program.
 3. الحالة تظهر في https://developer.apple.com/account بحساب `info@tmkeen.com.sa`.
 4. إذا تأخر الرد، يُتواصل مع https://developer.apple.com/contact/ بذكر Enrollment ID **W25Z4X84PN**.
 5. **الموقع:** `tmkeen.com.sa` لا يفتح وقت الإرسال. يجب تشغيله أثناء المراجعة.
 
-### ⚠️ تصحيح مطلوب: تاريخ الميلاد في حساب Apple (2026-11-24)
+### ⚠️ تصحيح مطلوب: تاريخ الميلاد في حساب Apple (اكتُشف 2026-11-24، قبل 16:15)
 
 تاريخ الميلاد الذي أُدخل في حساب Apple عند إنشائه **لا يطابق الهوية الوطنية لخالد**. يُصحَّح من https://account.apple.com ← Personal Information ← Birthday، حتى لا يتعارض مع الهوية إذا طلبت Apple التحقق منها أو عند استرداد الحساب. (التاريخ الصحيح لا يُكتب في الريبو.)
 
@@ -117,7 +124,7 @@ Apple تشترط إيميل المرجع على نطاق الشركة، و Works
 - **المسار:** https://developer.apple.com/contact/ ← **Membership and Account** ← **Program Enrolment** ← **Email** (الاتصال الهاتفي كان غير متاح «Due to high call volumes»).
 - **لماذا Program Enrolment وليس Program Purchase and Renewal:** الدفع لا يُفتح قبل انتهاء التحقق. Purchase and Renewal لمشاكل الدفع بعد الموافقة أو التجديد.
 - **الاسم والحساب** معبّآن تلقائياً: Khalid Alfouzan، `info@tmkeen.com.sa`.
-- **النتيجة:** «Thanks for contacting us»، **Case ID 103023331470**. الرد يصل إلى `info@tmkeen.com.sa`، وأي إضافة تكون بالرد على نفس البريد وليس برسالة جديدة.
+- **النتيجة (2026-11-24، قبل 11:59):** «Thanks for contacting us»، **Case ID 103023331470**. الرد يصل إلى `info@tmkeen.com.sa`، وأي إضافة تكون بالرد على نفس البريد وليس برسالة جديدة.
 
 الرسالة المُرسلة:
 
@@ -148,7 +155,7 @@ MADAR ALTAMKEEN COMPANY
 5. **تصحيح المنطقة في D&B** إلى Al Qassim. انظر [الرد على D&B](03-dnb-update-duns.md#الرد-على-dnb-لتصحيح-المنطقة). بعد التصحيح يُطلب من Apple تحديث عنوان الشركة بذكر Enrollment ID.
 6. **إضافة رقم موثوق ثانٍ** لحساب Apple (جوال الشركة)، و**إضافة إيميل بدر الشخصي** لمجموعة `bader@tmkeen.com.sa`.
 
-## قرار: البدء قبل اكتمال الشروط
+## قرار: البدء قبل اكتمال الشروط (2026-11-22، قبل 18:27)
 
 بدأنا 2026-11-22 قبل تصحيح المنطقة وقبل تشغيل الموقع، لأن Apple لا تطلب الدفع قبل الموافقة. المنطقة تُكتب **Al Qassim** لأنها الصحيحة. إذا قالت Apple إن البيانات لا تطابق D&B، ننتظر تصحيح D&B ثم نعيد المحاولة. الموقع قيد التجهيز.
 
@@ -194,7 +201,7 @@ https://account.apple.com ← **Create Your Apple Account**، ويفضّل في 
 - **تطبيق Apple Developer على iPhone**: تبويب Account ← Sign In ← Create Apple Account. الدخول فيه **منفصل عن iCloud الجوال**، فلا يحتاج تسجيل خروج الحساب الشخصي.
 - إن استمر الرفض: https://getsupport.apple.com ← Apple Account.
 
-### النتيجة: الحساب أُنشئ رغم الخطأ
+### النتيجة: الحساب أُنشئ رغم الخطأ (ظهر 2026-11-23)
 
 في 2026-11-23 ظهر في صندوق `info@tmkeen.com.sa` بريدان من Apple موجّهان إلى Khalid Alfouzan:
 - «التحقق من عنوان البريد الإلكتروني لحساب Apple: تم التحقق من عنوان البريد الإلكتروني...»
@@ -203,6 +210,8 @@ https://account.apple.com ← **Create Your Apple Account**، ويفضّل في 
 يعني أن **حساب Apple موجود**. **لا تنشئ حساباً جديداً.** ادخل من https://account.apple.com بـ `info@tmkeen.com.sa` وكلمة المرور، وراجع رقم الجوال الموثوق.
 
 ## الشروط قبل التسجيل
+
+**التاريخ:** كُتبت 2026-11-22، وما زالت كما هي في 2026-11-24 ما عدا أن الطلب أُرسل.
 
 | الشرط | الوضع الحالي | المطلوب |
 |---|---|---|
@@ -217,7 +226,7 @@ https://account.apple.com ← **Create Your Apple Account**، ويفضّل في 
 
 والبيانات فيه تتضمن **State: Ash Sharqiyah**. نموذج Apple فيه خانة منطقة، فلو تركنا الخطأ إما أن نكتب منطقة خاطئة، أو يختلف العنوان عن ملف D&B. أما Google فليس عنده خانة منطقة للعناوين السعودية.
 
-## الخطوة 1: فحص الرقم في أداة Apple
+## الخطوة 1: فحص الرقم في أداة Apple (لم يُنفَّذ حتى 2026-11-24)
 
 افتح https://developer.apple.com/enroll/duns-lookup/ وسجّل الدخول بحساب Apple، ثم ابحث بهذه البيانات:
 
@@ -232,7 +241,7 @@ https://account.apple.com ← **Create Your Apple Account**، ويفضّل في 
 - أي تعديل في D&B يحتاج **يومي عمل** حتى يصل إلى Apple. افحص بعد يومين من بريد D&B.
 - تأكد أن الأداة تعرض الرقم `986473058` والمنطقة **Al Qassim** قبل أن تسجّل.
 
-## الخطوة 2: التسجيل
+## الخطوة 2: التسجيل (خطة 2026-11-22، والتنفيذ الفعلي 2026-11-23 في قسم «التسجيل في Apple Developer Program» أعلاه)
 
 1. افتح https://developer.apple.com/programs/enroll/ أو تطبيق Apple Developer، وادخل بحساب Apple الموجود `info@tmkeen.com.sa`.
 2. اختر التسجيل كـ **Organization**، وليس Individual.
