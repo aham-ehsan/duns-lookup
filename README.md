@@ -84,6 +84,7 @@
 | 2026-11-23 | Apple: صلاحية التوقيع «My organization has given me the authority» لأن خالد عضو مجلس إدارة وليس المالك، فطلبت Apple مرجعاً: بدر العبدالمنعم (Chairman of the Board). إنشاء مجموعة Google `bader@tmkeen.com.sa` تحوّل إلى إيميل بدر الشخصي، لأن Apple تشترط إيميلاً على نطاق الشركة |
 | 2026-11-23 | ✅ **إرسال طلب Apple Developer Program**: «Your enrollment is being processed»، Enrollment ID **W25Z4X84PN**. بانتظار تحقق Apple من صلاحية التوقيع، ثم بريد بتعليمات الدفع |
 | 2026-11-24 | ✅ Play Console: التفاصيل الشخصية بالهوية الوطنية لخالد (ALFOUZAN, KHALID ABDULLAH A) وعنوان الشركة. «تم التحقق من MADAR ALTAMKEEN COMPANY». اللوحة: Google يكمل التأكيد خلال أيام. بقي: الإقرار بالجهة التجارية، وإثبات ملكية الموقع، وتأكيد الهواتف |
+| 2026-11-24 | ✅ Play Console: الإقرار بأن الحساب **جهة تجارية** (قانون الاتحاد الأوروبي)، ومراجعة البيانات العلنية: D-U-N-S 986473058، MADAR ALTAMKEEN COMPANY، العنوان بدون منطقة، info@tmkeen.com.sa، +966560509111 |
 | 2026-11-24 | مراسلة دعم Apple (Membership and Account ← Program Enrolment ← Email) عن حالة الطلب W25Z4X84PN وموعد الدفع. Case ID **103023331470** |
 | 2026-11-23 | بريد Apple بتأكيد استلام الطلب. العنوان فيه من D&B بالمنطقة الخاطئة **Ash Sharqiyah**، فتصحيح D&B ما زال مطلوباً |
 | 2026-11-23 | إثبات الهوية في Play Console: تأكيد بيانات المؤسسة من D&B، ورفع السجل التجاري بالإنجليزي كـ «مُقتطف من السجلّ التجاري». حالة المؤسسة: مُرسلة. بقيت التفاصيل الشخصية |
