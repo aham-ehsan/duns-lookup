@@ -102,6 +102,33 @@ Apple تشترط إيميل المرجع على نطاق الشركة، و Works
 2. بعد التحقق يصل بريد فيه تعليمات إكمال التسجيل: **دفع 99 دولاراً** والموافقة على اتفاقية Apple Developer Program.
 3. الحالة تظهر في https://developer.apple.com/account بحساب `info@tmkeen.com.sa`.
 4. إذا تأخر الرد، يُتواصل مع https://developer.apple.com/contact/ بذكر Enrollment ID **W25Z4X84PN**.
+
+### مراسلة دعم Apple عن حالة الطلب (2026-11-24)
+
+- **المسار:** https://developer.apple.com/contact/ ← **Membership and Account** ← **Program Enrolment** ← **Email** (الاتصال الهاتفي كان غير متاح «Due to high call volumes»).
+- **لماذا Program Enrolment وليس Program Purchase and Renewal:** الدفع لا يُفتح قبل انتهاء التحقق. Purchase and Renewal لمشاكل الدفع بعد الموافقة أو التجديد.
+- **الاسم والحساب** معبّآن تلقائياً: Khalid Alfouzan، `info@tmkeen.com.sa`.
+- **النتيجة:** «Thanks for contacting us»، **Case ID 103023331470**. الرد يصل إلى `info@tmkeen.com.sa`، وأي إضافة تكون بالرد على نفس البريد وليس برسالة جديدة.
+
+الرسالة المُرسلة:
+
+```
+Hello,
+
+We submitted an Apple Developer Program enrollment for our organization on November 23, 2026, and received the confirmation email.
+
+Enrollment ID: W25Z4X84PN
+Legal Entity: MADAR ALTAMKEEN COMPANY
+D-U-N-S Number: 986473058
+Enrollee: Khalid Alfouzan (Board Member)
+Verification contact: Bader Alabdulmunim (Chairman of the Board)
+
+Could you please let us know the status of the verification, when we will be able to complete the payment, and whether you need any additional information or documents from us?
+
+Thank you,
+Khalid Alfouzan
+MADAR ALTAMKEEN COMPANY
+```
 5. **الموقع:** `tmkeen.com.sa` لا يفتح وقت الإرسال. يجب تشغيله أثناء المراجعة.
 
 **المجموعة ليس لها صندوق بريد.** الرسائل تُحوَّل إلى صناديق الأعضاء، وتُحفظ في أرشيف https://groups.google.com/a/tmkeen.com.sa/g/bader (للاطلاع). **لا تُنشأ كاسم بديل على `info@`**، لأن رسائل Apple عندها تصل لصاحب الطلب لا لبدر.
