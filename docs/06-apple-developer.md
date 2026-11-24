@@ -103,6 +103,10 @@ Apple تشترط إيميل المرجع على نطاق الشركة، و Works
 3. الحالة تظهر في https://developer.apple.com/account بحساب `info@tmkeen.com.sa`.
 4. إذا تأخر الرد، يُتواصل مع https://developer.apple.com/contact/ بذكر Enrollment ID **W25Z4X84PN**.
 
+### ⚠️ تصحيح مطلوب: تاريخ الميلاد في حساب Apple (2026-11-24)
+
+تاريخ الميلاد الذي أُدخل في حساب Apple عند إنشائه **لا يطابق الهوية الوطنية لخالد**. يُصحَّح من https://account.apple.com ← Personal Information ← Birthday، حتى لا يتعارض مع الهوية إذا طلبت Apple التحقق منها أو عند استرداد الحساب. (التاريخ الصحيح لا يُكتب في الريبو.)
+
 ### مراسلة دعم Apple عن حالة الطلب (2026-11-24)
 
 - **المسار:** https://developer.apple.com/contact/ ← **Membership and Account** ← **Program Enrolment** ← **Email** (الاتصال الهاتفي كان غير متاح «Due to high call volumes»).
