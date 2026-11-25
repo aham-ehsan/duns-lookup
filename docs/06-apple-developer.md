@@ -126,6 +126,25 @@ Apple تشترط إيميل المرجع على نطاق الشركة، و Works
 - **الاسم والحساب** معبّآن تلقائياً: Khalid Alfouzan، `info@tmkeen.com.sa`.
 - **النتيجة (2026-11-24، قبل 11:59):** «Thanks for contacting us»، **Case ID 103023331470**. الرد يصل إلى `info@tmkeen.com.sa`، وأي إضافة تكون بالرد على نفس البريد وليس برسالة جديدة.
 - **2026-11-25:** محاولة الاتصال من نفس المسار، و**الهاتف ما زال غير متاح** («Due to high call volumes, phone support is temporarily unavailable»). الصفحة تعرض **Related open cases** وفيها Case 103023331470 مع زر **Get more help**، وهو للمتابعة على نفس الحالة. **لا تُفتح رسالة جديدة** بنفس السؤال، لأن الحالات المكررة تؤخر الرد. إذا مرت 3 أيام عمل بدون رد، فالمتابعة تكون من **Get more help** على نفس الحالة.
+- **صفحة الحالة** (`developer.apple.com/contact/case/103023331470/...`): خيار **Email** فيها يضيف رسالة **لنفس الحالة** ولا يفتح حالة جديدة. الهاتف كان غير متاح أيضاً يوم 2026-11-25.
+- **موعد المتابعة:** الخميس 2026-11-26 عيد الشكر في أمريكا (Thanksgiving)، فالرد أبطأ ذلك الأسبوع. إذا لم يصل رد حتى **2026-11-30 أو 2026-12-01**، تُرسل هذه المتابعة من صفحة الحالة ← Email (ويُضاف سطر إن صار الموقع يعمل):
+
+```
+Hello,
+
+Following up on this case regarding our Apple Developer Program enrollment.
+
+Enrollment ID: W25Z4X84PN
+Legal Entity: MADAR ALTAMKEEN COMPANY (D-U-N-S 986473058)
+Enrollee: Khalid Alfouzan
+Submitted: November 23, 2026
+
+Could you please let us know whether the verification of signing authority is complete, or if you need any additional information or documents from us?
+
+Thank you,
+Khalid Alfouzan
+MADAR ALTAMKEEN COMPANY
+```
 
 الرسالة المُرسلة:
 
