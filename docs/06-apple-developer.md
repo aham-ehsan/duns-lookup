@@ -125,6 +125,7 @@ Apple تشترط إيميل المرجع على نطاق الشركة، و Works
 - **لماذا Program Enrolment وليس Program Purchase and Renewal:** الدفع لا يُفتح قبل انتهاء التحقق. Purchase and Renewal لمشاكل الدفع بعد الموافقة أو التجديد.
 - **الاسم والحساب** معبّآن تلقائياً: Khalid Alfouzan، `info@tmkeen.com.sa`.
 - **النتيجة (2026-11-24، قبل 11:59):** «Thanks for contacting us»، **Case ID 103023331470**. الرد يصل إلى `info@tmkeen.com.sa`، وأي إضافة تكون بالرد على نفس البريد وليس برسالة جديدة.
+- **2026-11-25:** محاولة الاتصال من نفس المسار، و**الهاتف ما زال غير متاح** («Due to high call volumes, phone support is temporarily unavailable»). الصفحة تعرض **Related open cases** وفيها Case 103023331470 مع زر **Get more help**، وهو للمتابعة على نفس الحالة. **لا تُفتح رسالة جديدة** بنفس السؤال، لأن الحالات المكررة تؤخر الرد. إذا مرت 3 أيام عمل بدون رد، فالمتابعة تكون من **Get more help** على نفس الحالة.
 
 الرسالة المُرسلة:
 

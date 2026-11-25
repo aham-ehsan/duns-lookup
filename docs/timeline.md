@@ -72,6 +72,7 @@
 | 2026-11-24 | قبل 18:22 | الريبو | البطاقة المرجعية `docs/00-account-reference.md` وإضافات جدول المشاكل والحلول | [00](00-account-reference.md) |
 | 2026-11-24 | 18:31 | الريبو | إضافة صلاحية `git push` المحلية (`.claude/settings.local.json`، خارج الريبو) والرفع على GitHub | [README](../README.md) |
 | 2026-11-24 | قبل 20:11 | Apple | ملاحظة: developer.apple.com يقبل أي جهاز برمز OTP، أما account.apple.com فيحتاج موافقة الـ iPhone الموثوق | [06](06-apple-developer.md) |
+| 2026-11-25 | | Apple | محاولة الاتصال: Membership and Account ← Program Enrolment. **الهاتف ما زال غير متاح** («Due to high call volumes»). الصفحة تعرض الحالة المفتوحة Case 103023331470 مع زر **Get more help**. لم تُرسل رسالة جديدة حتى لا تتكرر الحالات | [06](06-apple-developer.md) |
 
 ## ما لم يحدث بعد
 
