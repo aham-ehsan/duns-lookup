@@ -285,7 +285,7 @@ MADAR ALTAMKEEN COMPANY
 3. بعد التحقق يصل بريد تعليمات الدفع (99 دولاراً) والموافقة على اتفاقية البرنامج.
 4. أي مراسلة مع Apple من الآن تذكر **M5QLJCC34R**.
 
-**تحديث الحالة 103023331470 بالطلب الجديد (مُجهّز 2026-11-28):** الحالة المفتوحة تسأل عن الطلب الأول المسحوب، فتُحدَّث **برسالة واحدة على نفس الحالة**، وليس بحالة جديدة. تُرسل من صفحة الحالة ← **Email**، أو بالرد على بريد «Thanks for submitting your support request» (2026-11-24) في `info@`. Apple لا تعمل السبت والأحد، فالرد يُتوقع من يوم الإثنين. السطر «as we are preparing to publish our app» يُكتب فقط إذا كان صحيحاً.
+**تحديث الحالة 103023331470 بالطلب الجديد (✅ أُرسل 2026-11-28، بعد إرسال الطلب الجديد):** أُرسل من https://developer.apple.com/contact/case/103023331470/solution/select ← **Email** ← صفحة «Send us a message» (الاسم Khalid Alfouzan، والحساب `info@tmkeen.com.sa`) ← الرسالة أدناه ← إرسال. النتيجة: «**Thanks for contacting us.** We'll review your message and get back to you as soon as possible.» على نفس Case ID 103023331470. الحالة المفتوحة تسأل عن الطلب الأول المسحوب، فتُحدَّث **برسالة واحدة على نفس الحالة**، وليس بحالة جديدة. تُرسل من صفحة الحالة ← **Email**، أو بالرد على بريد «Thanks for submitting your support request» (2026-11-24) في `info@`. Apple لا تعمل السبت والأحد، فالرد يُتوقع من يوم الإثنين. السطر «as we are preparing to publish our app» يُكتب فقط إذا كان صحيحاً.
 
 ```
 Hello,
