@@ -311,14 +311,16 @@ MADAR ALTAMKEEN COMPANY
 | المطلوب | ماذا نرفع | ملاحظات |
 |---|---|---|
 | Applicant's government-issued photo ID | **جواز سفر خالد** (صفحة البيانات) | الجواز بالإنجليزي فلا يحتاج ترجمة. صورة ملونة وواضحة وكاملة وغير منتهية. **لا تُحفظ في الريبو ولا تُرسل في المحادثة**، تُرفع مباشرة في صفحة Apple |
-| Applicant's employment verification | 1. `documents/Madar-alTamkeen-CR-Details-English.pdf`: قائمة المديرين فيها **KHALID ABDULLAH ALI ALFOUZAN — Member of the Governing Council**، و **BADER SALEH ALI ALABDULMUNIM — Chairman**. 2. **خطاب تفويض** بالإنجليزي من رئيس المجلس (النص أدناه) | خالد ليس موظفاً بل عضو مجلس، فالسجل يثبت صفته، والخطاب يثبت التفويض |
+| Applicant's employment verification | 1. `documents/Madar-alTamkeen-CR-Details-English.pdf`: قائمة المديرين فيها **KHALID ABDULLAH ALI ALFOUZAN — Member of the Governing Council**، و **BADER SALEH ALI ALABDULMUNIM — Chairman**. 2. (اختياري) **خطاب تفويض** بالإنجليزي من رئيس المجلس (النص أدناه) | خالد ليس موظفاً بل عضو مجلس، فالسجل يثبت صفته، والخطاب يثبت التفويض |
 | Commercial Registration Certificate | `documents/Madar-alTamkeen-CR-Details-English.pdf` (Commercial Record Info من المركز السعودي للأعمال، بالإنجليزي، الرقم الموحد 7050078752) | الشهادة العربية `Madar-alTamkeen-CR-Certificate-Arabic.pdf` لا تُرفع وحدها بدون ترجمة معتمدة |
 
 **إذا لم يتوفر الجواز (سؤال 2026-11-28):** Apple تطلب «government-issued photo ID» ولا تشترط الجواز تحديداً، لكن **الهوية الوطنية بالعربي فقط**، فتُرفع معها **ترجمة إنجليزية معتمدة** من مكتب ترجمة معتمد. رفعها بدون ترجمة يخالف شرط اللغة وقد يؤخر الطلب أو يُرفض المستند. الجواز أسرع لأنه بالإنجليزي أصلاً. **القرار (2026-11-28): جواز خالد غير متاح**، فالمستند هو **الهوية الوطنية مع ترجمة إنجليزية معتمدة**. بديل يُفحص: رخصة القيادة السعودية، إذا كان الاسم والبيانات فيها مكتوبة بالإنجليزي أيضاً. **الترجمة الذاتية لا تكفي:** Apple تشترط «solicitor-certified»، أي ترجمة عليها ختم وتوقيع جهة معتمدة (مكتب ترجمة معتمد أو محامٍ)، وليست ترجمة نكتبها بأنفسنا.
 
 **قبل رفع الجواز:** يُفضّل **تصحيح تاريخ الميلاد في حساب Apple** ليطابق الجواز (انظر قسم تاريخ الميلاد)، لأن Apple الآن تتحقق من الهوية.
 
-**خطاب التفويض (Employment and authority verification):** يُطبع على ورق الشركة، ويوقّعه **بدر بنفسه** ويختمه بختم الشركة، ثم يُمسح PDF:
+**خطاب التفويض اختياري** (توضيح 2026-11-28): Apple لم تطلب خطاباً بالاسم، بل «employment verification». السجل الإنجليزي يذكر خالد باسمه وصفته (Member of the Governing Council)، وهذا يثبت ارتباطه بالشركة. الخطاب يقوّي الطلب لأننا اخترنا «My organization has given me the authority»، فيُرفق إذا كان توقيع بدر سهلاً. وإذا كان سيؤخر الرفع، تُرفع المستندات بدونه، وإن احتاجته Apple فستطلبه.
+
+**نص الخطاب (Employment and authority verification):** يُطبع على ورق الشركة، ويوقّعه **بدر بنفسه** ويختمه بختم الشركة، ثم يُمسح PDF:
 
 ```
 MADAR ALTAMKEEN COMPANY
