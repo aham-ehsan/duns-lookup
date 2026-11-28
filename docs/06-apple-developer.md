@@ -173,6 +173,24 @@ Khalid Alfouzan
 MADAR ALTAMKEEN COMPANY
 ```
 
+### ⚠️ صفحة الحساب لا تعرض الطلب (2026-11-28)
+
+- صفحة https://developer.apple.com/account عرضت **«Join the Apple Developer Program»** مع زر **Enroll today**، ولم تعرض «Your enrollment is being processed» ولا رقم الطلب W25Z4X84PN.
+- زر التسجيل فتح نموذجاً فارغاً (`enroll/organization/details/edit/legal-entity`). بعد إدخال اسم الكيان والرقم، جلبت Apple عنوان D&B (بريدة، 7481، Region SA) وانتقلت إلى شاشة الموقع وصلاحية التوقيع.
+- **أوقفنا النموذج قبل Continue**، حتى لا يُرسل طلب ثانٍ قبل معرفة حالة الطلب الأول.
+
+### ❌ السبب: Apple سحبت الطلب في 2026-11-23 (اكتُشف 2026-11-28)
+
+البحث في صندوق `info@tmkeen.com.sa` أظهر بريداً من **Apple Developer** بتاريخ **2026-11-23** لم ننتبه له وقتها:
+
+> **Your enrollment has been withdrawn.**
+> Hello Khalid, We're following up with you regarding your enrollment ID W25Z4X84PN. Your organization's ...
+
+- يعني أن **الطلب W25Z4X84PN انتهى** في نفس يوم إرساله، ولا يوجد طلب قيد المراجعة ولا دفع منتظر.
+- الحالة Case 103023331470 (2026-11-24) سألت عن طلب كان قد سُحب. رسالة المتابعة المجهّزة أعلاه **لم تعد مناسبة** ولا تُرسل كما هي.
+- **قبل إرسال طلب جديد:** نقرأ سبب السحب كاملاً من البريد، ونصلح السبب أولاً. إرسال نفس البيانات مرة ثانية قد يُسحب بنفس السبب.
+- **درس:** راجع **كل** بريد Apple بعد الإرسال، وليس فقط رسالة الاستلام. البريدان (الاستلام والسحب) وصلا في نفس اليوم.
+
 ## الخطوات القادمة بالترتيب (حالة 2026-11-24)
 
 1. **انتظار تحقق Apple** من صلاحية خالد في الطلب **W25Z4X84PN**، ورد الدعم على **Case 103023331470**. المتابعة من بريد `info@tmkeen.com.sa` ومن https://developer.apple.com/account.

@@ -73,6 +73,9 @@
 | 2026-11-24 | 18:31 | الريبو | إضافة صلاحية `git push` المحلية (`.claude/settings.local.json`، خارج الريبو) والرفع على GitHub | [README](../README.md) |
 | 2026-11-24 | قبل 20:11 | Apple | ملاحظة: developer.apple.com يقبل أي جهاز برمز OTP، أما account.apple.com فيحتاج موافقة الـ iPhone الموثوق | [06](06-apple-developer.md) |
 | 2026-11-25 | | Apple | محاولة الاتصال: Membership and Account ← Program Enrolment. **الهاتف ما زال غير متاح** («Due to high call volumes»). الصفحة تعرض الحالة المفتوحة Case 103023331470 مع زر **Get more help**. لم تُرسل رسالة جديدة حتى لا تتكرر الحالات | [06](06-apple-developer.md) |
+| 2026-11-26 | | Apple | توثيق طريقة تصحيح تاريخ الميلاد في حساب Apple (من الـ iPhone الموثوق). لم يُنفَّذ التصحيح بعد | [06](06-apple-developer.md) |
+| 2026-11-28 | | Apple | ⚠️ صفحة developer.apple.com/account تعرض **«Join the Apple Developer Program / Enroll today»** بدل حالة الطلب W25Z4X84PN. زر التسجيل فتح نموذجاً جديداً، وأُوقف **قبل Continue** في شاشة صلاحية التوقيع حتى لا يُرسل طلب مكرر. جارٍ التأكد من الحساب المستخدم ومن بريد Apple | [06](06-apple-developer.md) |
+| 2026-11-28 | | Apple | ❌ **السبب:** في صندوق `info@` بريد من Apple Developer بتاريخ **2026-11-23**: **«Your enrollment has been withdrawn»** للطلب W25Z4X84PN. لم ننتبه له يوم وصوله. الطلب انتهى، ولا دفع منتظر. جارٍ قراءة سبب السحب قبل طلب جديد | [06](06-apple-developer.md) |
 
 ## ما لم يحدث بعد
 

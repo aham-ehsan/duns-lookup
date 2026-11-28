@@ -12,7 +12,7 @@
 |---|---|
 | رقم D-U-N-S | ✅ 986473058، Legal Status = Corporation. ⚠️ المنطقة مسجّلة خطأً Ash Sharqiyah |
 | Google Play Console | ✅ **مكتمل**. جاهز لإنشاء التطبيقات |
-| Apple Developer Program | ⏳ الطلب W25Z4X84PN أُرسل، بانتظار تحقق Apple ثم الدفع |
+| Apple Developer Program | ❌ الطلب W25Z4X84PN **سُحب** في 2026-11-23 (اكتُشف 2026-11-28). لا دفع منتظر، والخطوة التالية طلب جديد بعد إصلاح سبب السحب |
 | الموقع `tmkeen.com.sa` | ❌ لا يفتح (بدون سجل A) |
 
 ## 1. الشركة
