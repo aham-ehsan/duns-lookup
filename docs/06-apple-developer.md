@@ -2,7 +2,7 @@
 
 # 6. حساب Apple Developer
 
-- **الحالة:** ⏳ **طلب التسجيل أُرسل 2026-11-23**، Enrollment ID **W25Z4X84PN**، كـ Company / Organization. بانتظار تحقق Apple من صلاحية التوقيع، ثم الدفع.
+- **الحالة:** ⏳ **طلب جديد أُرسل 2026-11-28**، Enrollment ID **M5QLJCC34R**، كـ Company / Organization. بانتظار تحقق Apple من صلاحية التوقيع، ثم الدفع. الطلب الأول W25Z4X84PN (2026-11-23) سحبته Apple لأن الموقع لم يكن يفتح.
 - **صاحب الحساب:** خالد الفوزان (Khalid Alfouzan)، عضو مجلس الإدارة، بإيميل `info@tmkeen.com.sa`.
 - **الرسوم:** 99 دولاراً سنوياً، وتُدفع **بعد** موافقة Apple على المنظمة، فالبدء لا يكلف شيئاً.
 - **ما ينقص قبل التسجيل:** موقع `tmkeen.com.sa` يفتح (قيد التجهيز)، ويُفضّل تصحيح المنطقة في D&B إلى Al Qassim.
@@ -248,6 +248,42 @@ MADAR ALTAMKEEN COMPANY
 2. **جوال المرجع (بدر):** جوال بدر نفسه، وليس `560509111`، لأن Apple قد تتصل بالمرجع ليؤكد صلاحية خالد.
 
 بعد الإرسال يصل Enrollment ID جديد. رقم الطلب القديم W25Z4X84PN انتهى، فلا يُستخدم في المراسلات الجديدة إلا كمرجع تاريخي.
+
+### ✅ أُرسل الطلب الجديد (2026-11-28)
+
+**الوقت:** بعد 12:55 بتوقيت الرياض، من المتصفح بحساب `info@tmkeen.com.sa`.
+
+**المسار:** https://developer.apple.com/account ← **Enroll today** ← **Continue enrollment on the web** ← Legal Entity Name و D-U-N-S ورمز الصورة ← شاشة الموقع وصلاحية التوقيع والمرجع (`enroll/organization/details/edit/signing-authority`) ← صفحة المراجعة (`enroll/organization/details/confirm`) ← **Submit**.
+
+> **Your enrollment is being processed.** Enrollment ID: **M5QLJCC34R**
+> Once we verify your authority to sign legal agreements, we'll email you with instructions on how to complete your enrollment.
+
+القيم المُرسلة كما ظهرت في صفحة المراجعة (Confirm your information):
+
+| الخانة | القيمة |
+|---|---|
+| Legal Entity Type | Company / Organization |
+| Legal Entity Name | MADAR ALTAMKEEN COMPANY |
+| D-U-N-S® Number | 986473058 |
+| Local Business Name | MADAR ALTAMKEEN COMPANY |
+| Address | Building Number 7481,Ayesha Bint Abi Bakr Street |
+| City / Town | Buraidah |
+| Zip / Postal Code | 52363 |
+| Region | SA |
+| Website | `https://tmkeen.com.sa` (يعمل) |
+| Phone Number | +966 560509111 |
+| Signing authority | «My organization has given me the authority to bind it to legal agreements.» |
+| Your Work Email | `info@tmkeen.com.sa` (تحقق برمز Send code) |
+| المرجع | Bader Alabdulmunim، Chairman of the Board، `bader@tmkeen.com.sa` |
+| جوال المرجع | +966 560509111 (نفس جوال الشركة وخالد). نُبّه قبل الإرسال إلى أن الأفضل جوال بدر نفسه، **والقرار كان الإبقاء على الرقم**. إذا اتصلت Apple عليه لتأكيد صلاحية خالد، فبدر هو من يرد بنفسه |
+
+**الفرق عن الطلب الأول:** الموقع يعمل الآن. بقية القيم هي نفسها.
+
+**بعد الإرسال:**
+1. يُراجع صندوق `info@tmkeen.com.sa` **كل يوم**، وتُفتح **كل** رسالة من Apple، ومعها أرشيف مجموعة `bader@`. الطلب الأول سُحب في نفس يوم إرساله ولم ننتبه للبريد خمسة أيام.
+2. يبقى الموقع يعمل طوال المراجعة.
+3. بعد التحقق يصل بريد تعليمات الدفع (99 دولاراً) والموافقة على اتفاقية البرنامج.
+4. أي مراسلة مع Apple من الآن تذكر **M5QLJCC34R**.
 
 ## الخطوات القادمة بالترتيب (حالة 2026-11-24)
 

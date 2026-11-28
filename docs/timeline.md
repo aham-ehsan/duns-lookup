@@ -78,6 +78,7 @@
 | 2026-11-28 | | Apple | ❌ **السبب:** في صندوق `info@` بريد من Apple Developer بتاريخ **2026-11-23**: **«Your enrollment has been withdrawn»** للطلب W25Z4X84PN. لم ننتبه له يوم وصوله. الطلب انتهى، ولا دفع منتظر. جارٍ قراءة سبب السحب قبل طلب جديد | [06](06-apple-developer.md) |
 | 2026-11-28 | | Apple | **سبب السحب: الموقع.** «Your organization's website must be publicly available, functional, and its domain name must be associated with your organization... Please resubmit your enrollment». `tmkeen.com.sa` لم يكن يفتح. الخطوة التالية: تشغيل الموقع بمحتوى حقيقي، ثم طلب جديد | [06](06-apple-developer.md) |
 | 2026-11-28 | | الموقع | فحص `https://tmkeen.com.sa`: **يعمل** بشهادة صالحة، وفيه اسم الشركة ومشروع Maslak والتواصل والعنوان ونسخة عربية. ملاحظتان: الاتصال متقطع من شبكة المكتب (نصف المحاولات فشلت)، ولا توجد صفحة سياسة خصوصية | [06](06-apple-developer.md#فحص-الموقع-2026-11-28) |
+| 2026-11-28 | بعد 12:55 | Apple | ✅ **إعادة التسجيل وإرساله:** Enrollment ID جديد **M5QLJCC34R**، كـ Company / Organization، بنفس البيانات والموقع `https://tmkeen.com.sa` يعمل. المرجع بدر بنفس جوال الشركة 560509111 (قرار الإبقاء عليه). بانتظار تحقق Apple ثم الدفع | [06](06-apple-developer.md#-أُرسل-الطلب-الجديد-2026-11-28) |
 
 ## ما لم يحدث بعد
 
