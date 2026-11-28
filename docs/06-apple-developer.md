@@ -285,6 +285,25 @@ MADAR ALTAMKEEN COMPANY
 3. بعد التحقق يصل بريد تعليمات الدفع (99 دولاراً) والموافقة على اتفاقية البرنامج.
 4. أي مراسلة مع Apple من الآن تذكر **M5QLJCC34R**.
 
+**تحديث الحالة 103023331470 بالطلب الجديد (مُجهّز 2026-11-28):** الحالة المفتوحة تسأل عن الطلب الأول المسحوب، فتُحدَّث **برسالة واحدة على نفس الحالة**، وليس بحالة جديدة. تُرسل من صفحة الحالة ← **Email**، أو بالرد على بريد «Thanks for submitting your support request» (2026-11-24) في `info@`. Apple لا تعمل السبت والأحد، فالرد يُتوقع من يوم الإثنين. السطر «as we are preparing to publish our app» يُكتب فقط إذا كان صحيحاً.
+
+```
+Hello,
+
+Following up on this case. Our first enrollment (W25Z4X84PN) was withdrawn on November 23 because our website was not available at that time. Our website is now live at https://tmkeen.com.sa, and we have submitted a new enrollment today.
+
+New Enrollment ID: M5QLJCC34R
+Legal Entity: MADAR ALTAMKEEN COMPANY (D-U-N-S 986473058)
+Enrollee: Khalid Alfouzan
+Submitted: November 28, 2026
+
+We would be grateful if the verification could be completed as soon as possible, as we are preparing to publish our app. Please let us know if you need any additional information or documents from us.
+
+Thank you,
+Khalid Alfouzan
+MADAR ALTAMKEEN COMPANY
+```
+
 ## الخطوات القادمة بالترتيب (حالة 2026-11-24)
 
 1. **انتظار تحقق Apple** من صلاحية خالد في الطلب **W25Z4X84PN**، ورد الدعم على **Case 103023331470**. المتابعة من بريد `info@tmkeen.com.sa` ومن https://developer.apple.com/account.
