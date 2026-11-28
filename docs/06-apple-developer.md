@@ -285,6 +285,73 @@ MADAR ALTAMKEEN COMPANY
 3. بعد التحقق يصل بريد تعليمات الدفع (99 دولاراً) والموافقة على اتفاقية البرنامج.
 4. أي مراسلة مع Apple من الآن تذكر **M5QLJCC34R**.
 
+### 📄 Apple تطلب مستندات للطلب M5QLJCC34R (2026-11-28، 13:03)
+
+بعد الإرسال بدقائق وصل إلى `info@` بريد **«Review your Apple Developer Program enrollment»**:
+
+> Hello,
+>
+> We're following up with you regarding your enrollment ID M5QLJCC34R. We can't verify your identity and your association with the enrolling entity.
+>
+> Please provide a copy of the following documents so we can continue processing your enrollment:
+> - Applicant's government-issued photo ID
+> - Applicant's employment verification
+>
+> All of the following business documents for MADAR ALTAMKEEN COMPANY:
+> - Commercial Registration Certificate
+>
+> You can securely upload the information at the following website: https://developer.apple.com/contact/file-upload/
+>
+> Review the upload requirements carefully to avoid processing delays. Documents must be in one of the following supported languages: English, Spanish, French, Italian, German, Brazilian Portuguese, Chinese, Japanese, or Korean. If your documents aren't in a supported language, please include solicitor-certified English translations.
+>
+> The Apple Developer Relations Team
+
+**العربية ليست من اللغات المقبولة.** أي مستند عربي يحتاج ترجمة إنجليزية معتمدة، لذلك نرفع النسخ الإنجليزية.
+
+| المطلوب | ماذا نرفع | ملاحظات |
+|---|---|---|
+| Applicant's government-issued photo ID | **جواز سفر خالد** (صفحة البيانات) | الجواز بالإنجليزي فلا يحتاج ترجمة. صورة ملونة وواضحة وكاملة وغير منتهية. **لا تُحفظ في الريبو ولا تُرسل في المحادثة**، تُرفع مباشرة في صفحة Apple |
+| Applicant's employment verification | 1. `documents/Madar-alTamkeen-CR-Details-English.pdf`: قائمة المديرين فيها **KHALID ABDULLAH ALI ALFOUZAN — Member of the Governing Council**، و **BADER SALEH ALI ALABDULMUNIM — Chairman**. 2. **خطاب تفويض** بالإنجليزي من رئيس المجلس (النص أدناه) | خالد ليس موظفاً بل عضو مجلس، فالسجل يثبت صفته، والخطاب يثبت التفويض |
+| Commercial Registration Certificate | `documents/Madar-alTamkeen-CR-Details-English.pdf` (Commercial Record Info من المركز السعودي للأعمال، بالإنجليزي، الرقم الموحد 7050078752) | الشهادة العربية `Madar-alTamkeen-CR-Certificate-Arabic.pdf` لا تُرفع وحدها بدون ترجمة معتمدة |
+
+**قبل رفع الجواز:** يُفضّل **تصحيح تاريخ الميلاد في حساب Apple** ليطابق الجواز (انظر قسم تاريخ الميلاد)، لأن Apple الآن تتحقق من الهوية.
+
+**خطاب التفويض (Employment and authority verification):** يُطبع على ورق الشركة، ويوقّعه **بدر بنفسه** ويختمه بختم الشركة، ثم يُمسح PDF:
+
+```
+MADAR ALTAMKEEN COMPANY
+Unified National Number: 7050078752 | D-U-N-S: 986473058
+Building 7481, Ayesha Bint Abi Bakr St., Ar Rimal Dist., Buraidah 52363, Saudi Arabia
+info@tmkeen.com.sa | +966 56 050 9111 | https://tmkeen.com.sa
+
+Date: ____________
+
+To: Apple Developer Relations
+Re: Employment and authority verification – Enrollment ID M5QLJCC34R
+
+This letter confirms that Mr. KHALID ABDULLAH ALI ALFOUZAN is a Member of the
+Governing Council (Board of Directors) of MADAR ALTAMKEEN COMPANY, a simplified
+joint stock company registered in the Kingdom of Saudi Arabia under Unified
+National Number 7050078752, as shown in the attached Commercial Registration record.
+
+The company has authorized Mr. Khalid Alfouzan to enroll MADAR ALTAMKEEN COMPANY
+in the Apple Developer Program and to accept and sign the related legal agreements
+on the company's behalf.
+
+For verification, please contact the undersigned at bader@tmkeen.com.sa.
+
+Sincerely,
+
+______________________
+BADER SALEH ALI ALABDULMUNIM
+Chairman of the Board
+MADAR ALTAMKEEN COMPANY
+
+[Company stamp]
+```
+
+**الرفع:** https://developer.apple.com/contact/file-upload/ بحساب `info@tmkeen.com.sa`، وتُقرأ شروط الرفع في الصفحة (أنواع الملفات وحجمها) قبل الرفع.
+
 **تحديث الحالة 103023331470 بالطلب الجديد (✅ أُرسل 2026-11-28، بعد إرسال الطلب الجديد):** أُرسل من https://developer.apple.com/contact/case/103023331470/solution/select ← **Email** ← صفحة «Send us a message» (الاسم Khalid Alfouzan، والحساب `info@tmkeen.com.sa`) ← الرسالة أدناه ← إرسال. النتيجة: «**Thanks for contacting us.** We'll review your message and get back to you as soon as possible.» على نفس Case ID 103023331470. الحالة المفتوحة تسأل عن الطلب الأول المسحوب، فتُحدَّث **برسالة واحدة على نفس الحالة**، وليس بحالة جديدة. تُرسل من صفحة الحالة ← **Email**، أو بالرد على بريد «Thanks for submitting your support request» (2026-11-24) في `info@`. Apple لا تعمل السبت والأحد، فالرد يُتوقع من يوم الإثنين. السطر «as we are preparing to publish our app» يُكتب فقط إذا كان صحيحاً.
 
 ```
