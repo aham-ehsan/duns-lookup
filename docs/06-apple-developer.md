@@ -191,6 +191,46 @@ MADAR ALTAMKEEN COMPANY
 - **قبل إرسال طلب جديد:** نقرأ سبب السحب كاملاً من البريد، ونصلح السبب أولاً. إرسال نفس البيانات مرة ثانية قد يُسحب بنفس السبب.
 - **درس:** راجع **كل** بريد Apple بعد الإرسال، وليس فقط رسالة الاستلام. البريدان (الاستلام والسحب) وصلا في نفس اليوم.
 
+**سبب السحب** (نص البريد كاملاً، قُرئ 2026-11-28):
+
+> Hello Khalid,
+>
+> We're following up with you regarding your enrollment ID W25Z4X84PN.
+>
+> Your organization's website must be publicly available, functional, and its domain name must be associated with your organization. We won't accept links to social media webpages or websites that contain minimal content or display a message from a domain registrar.
+>
+> We've withdrawn this enrollment. Please resubmit your enrollment and include a publicly available and functional organization's website.
+>
+> If you have any questions, please contact us.
+>
+> The Apple Developer Relations Team
+
+**السبب الوحيد هو الموقع.** `https://tmkeen.com.sa` لم يكن يفتح وقت الإرسال (لا يوجد سجل A في DNS). الكيان القانوني ورقم D-U-N-S والإيميل لم تُذكر كمشكلة.
+
+### شروط Apple للموقع قبل إعادة التسجيل
+
+| الشرط | المعنى العملي |
+|---|---|
+| publicly available | يفتح لأي شخص من أي مكان، بدون كلمة مرور، وعلى **https** بشهادة صالحة |
+| functional | الصفحات والروابط تعمل، وليس صفحة «قريباً» أو صفحة خطأ |
+| domain associated with your organization | النطاق `tmkeen.com.sa` نفس نطاق إيميل الشركة، والموقع يذكر اسم الشركة كما في D&B: `MADAR ALTAMKEEN COMPANY` و«شركة مدار التمكين» |
+| ليس صفحة تواصل اجتماعي | لا يُكتب رابط X أو Instagram أو LinkedIn بدل الموقع |
+| ليس محتوى قليلاً | صفحة واحدة فيها الاسم فقط لا تكفي. المطلوب: من نحن، والخدمات أو التطبيقات، والتواصل |
+| ليس صفحة المسجّل | لا تظهر صفحة مزوّد النطاق (parking) |
+
+**محتوى مقترح:** الصفحة الرئيسية بالاسم العربي والإنجليزي ونبذة عن الشركة، وصفحة الخدمات أو التطبيقات، وصفحة التواصل (`info@tmkeen.com.sa` والجوال والعنوان في بريدة 52363)، و**سياسة الخصوصية** و**الشروط**. سياسة الخصوصية مطلوبة أيضاً لاحقاً لكل تطبيق في App Store و Google Play.
+
+**قبل إعادة الإرسال:** افتح `https://tmkeen.com.sa` من جوال على شبكة الجوال (ليس Wi-Fi الشركة)، وتأكد أن الصفحة تفتح بدون تحذير أمان. إذا كان الموقع يعمل على `www` فقط، فإما أن يحوّل النطاق الأساسي إلى `www`، أو يُكتب في النموذج `https://www.tmkeen.com.sa`.
+
+### إعادة التسجيل (بعد تشغيل الموقع)
+
+نفس قيم 2026-11-23 في الخطوات 1 إلى 11 أعلاه، مع تعديلين:
+
+1. **Website:** الرابط الذي يفتح فعلاً.
+2. **جوال المرجع (بدر):** جوال بدر نفسه، وليس `560509111`، لأن Apple قد تتصل بالمرجع ليؤكد صلاحية خالد.
+
+بعد الإرسال يصل Enrollment ID جديد. رقم الطلب القديم W25Z4X84PN انتهى، فلا يُستخدم في المراسلات الجديدة إلا كمرجع تاريخي.
+
 ## الخطوات القادمة بالترتيب (حالة 2026-11-24)
 
 1. **انتظار تحقق Apple** من صلاحية خالد في الطلب **W25Z4X84PN**، ورد الدعم على **Case 103023331470**. المتابعة من بريد `info@tmkeen.com.sa` ومن https://developer.apple.com/account.
